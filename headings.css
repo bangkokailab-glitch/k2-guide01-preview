@@ -41,3 +41,12 @@
 .footer-bottom nav{gap:24px;font-size:14px}
 @media(max-width:1000px){.footer-top,.footer-bottom{width:calc(100% - 48px);flex-wrap:wrap}.service-section{min-height:calc(100svh - 128px)}}
 @media(max-width:767px){.service-section{min-height:calc(100svh - 80px);padding:64px 22px}.service-section .eyebrow{margin-bottom:30px}.service-section .service-title{font-size:27px;margin-bottom:36px}.service-section .service-cta{min-height:64px}.footer-top,.footer-bottom{flex-direction:column;text-align:center}.guide-footer .footer-top img{max-width:100%;width:260px}.guide-footer nav{flex-wrap:wrap;justify-content:center;gap:24px}.footer-top nav span{font-size:17px}.footer-top small{font-size:10px}.footer-bottom nav{font-size:13px;gap:18px}}
+
+/* Design-review draft: keep the major headings on one line. */
+.hero h1,.chapter-heading h2,.body-section h3,.summary-next h3{white-space:nowrap}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(24px,7.5vw,27px);letter-spacing:.01em}
+  .hero .sub{font-size:clamp(13px,4.2vw,15px);letter-spacing:0}
+  .chapter-heading h2{font-size:clamp(22px,6.7vw,25px);letter-spacing:.02em}
+  .variant-b .body-section h3,.summary-next h3{font-size:clamp(19px,6.2vw,23px);letter-spacing:.02em}
+}
