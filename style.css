@@ -32,3 +32,7 @@ h1 span,h2 span{display:inline-block}@media(max-width:600px){h1{font-size:29px}h
 .service-cta:hover{background:#fff4e0}.service-cta:focus-visible{outline:2px solid #e1c698;outline-offset:5px}
 .guide-footer{margin-top:0}
 @media(max-width:767px){.hero{height:300px;padding:38px 20px}.hero .eyebrow{margin-bottom:24px}.hero h1{margin-bottom:20px}.body-section h3,.summary-next h3{font-size:24px}.body-section h4{font-size:18px}.summary-next{margin-top:28px;padding-top:25px}.service-section{padding:45px 22px 52px}.service-title{font-size:27px}.service-description{font-size:16px}.service-cta{min-width:0;width:100%;max-width:360px;font-size:16px}.summary-next .next-card{font-size:18px;padding:18px 12px}}
+
+/* ナビの下線は現在地だけに表示する。 */
+#guide-nav a{border-bottom:0}
+#guide-nav a[aria-current="page"]{border-bottom:1px solid #b99a67}
