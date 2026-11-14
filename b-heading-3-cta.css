@@ -1,0 +1,47 @@
+/* Match the closing invitation to the Media home guide banner. */
+.service-section{
+  height:auto;
+  min-height:600px;
+  padding:100px 24px;
+  color:#fff9ed;
+}
+.service-section .eyebrow{
+  margin:0 0 30px;
+  color:#f3e6cf;
+  font:11px/1.5 Georgia,serif;
+  letter-spacing:.25em;
+}
+.service-section .service-title{
+  margin:0;
+  color:#fff9ed;
+  font:400 clamp(28px,2.55vw,40px)/1.8 "Hiragino Mincho ProN","Yu Mincho",serif;
+  letter-spacing:.045em;
+  text-wrap:balance;
+}
+.service-section .service-cta{
+  width:auto;
+  min-width:310px;
+  min-height:62px;
+  max-width:100%;
+  margin-top:42px;
+  padding:18px 30px;
+  border:1px solid #f1e6d5;
+  border-radius:0;
+  background:#f1e6d5;
+  color:#3d3023;
+  font:15px/normal "Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  letter-spacing:.08em;
+  text-decoration:none;
+}
+.service-section .service-cta:hover{background:#fff9ee}
+@media(max-width:900px){
+  .service-section{min-height:520px;padding:78px 24px}
+  .service-section .service-title{font-size:29px}
+  .service-section .service-cta{min-width:280px}
+}
+@media(max-width:600px){
+  .service-section{min-height:490px;padding:76px 20px}
+  .service-section .eyebrow{font-size:9px;margin-bottom:24px}
+  .service-section .service-title{font-size:clamp(20px,5.5vw,27px);line-height:1.9;letter-spacing:.005em}
+  .service-section .service-cta{width:100%;min-width:0;max-width:320px;min-height:58px;margin-top:33px;padding:17px 20px}
+}

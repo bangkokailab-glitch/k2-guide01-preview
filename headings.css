@@ -1,0 +1,43 @@
+
+.header:has(.brand){height:88px;padding:0;background:#000;position:relative;z-index:5}
+.header-inner{height:100%;width:80%;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:32px}
+.header .brand{flex:none;width:clamp(250px,22vw,310px);max-width:none;margin:0}
+.header nav{position:static;transform:none;width:auto;max-width:none;left:auto;margin:0;gap:8px;flex:1;justify-content:space-between;font-family:"Hiragino Kaku Gothic ProN",sans-serif;font-size:12px;letter-spacing:0}
+.header nav a,.header nav span{padding:8px 0;line-height:1.6;white-space:normal;text-align:center;text-wrap:balance}
+.header nav i{padding:0;font-size:14px}.menu-toggle{display:none}
+.hero{height:clamp(305px,calc(100svh - 445px),455px)}
+.variant-b .body-section h3{border:0;background:none;padding:0;margin:0 0 20px;font-size:28px;font-weight:400;line-height:1.65}
+.variant-b .body-section h4{border:0;background:none;padding:0;font-size:19px;font-weight:600;line-height:1.8;margin:0 0 26px;color:#6a5135}
+.heading-1 .body-section h3{padding-bottom:18px;border-bottom:1px solid #bba17e}
+.heading-1 .body-section h4{display:flex;align-items:baseline;gap:12px}
+.heading-1 .body-section h4:before{content:"";width:22px;height:1px;background:#927042;flex:none;align-self:center}
+.heading-2 .body-section h3{padding:18px 24px;background:#e7d9c3;border-top:1px solid #baa17a;border-bottom:1px solid #baa17a}
+.heading-2 .body-section h4{padding:0 0 12px;border-bottom:1px solid #d5c4a9;color:#3c3022}
+.heading-2 .body-section>.label:after{display:none}
+.heading-3 .body-section{position:relative}
+.heading-3 .body-section>.label{letter-spacing:.12em!important;font-size:14px!important;margin-bottom:18px!important}
+.heading-3 .body-section>.label:after{max-width:72px}
+.heading-3 .body-section h3{padding-left:22px;border-left:3px solid #9e7d4e;margin-bottom:24px}
+.heading-3 .body-section h4{font-weight:600;font-size:18px;color:#3c3022;padding:11px 16px;background:#ebe0ce;display:inline-block}
+@media(max-width:1399px) and (min-width:1001px){.header-inner{width:calc(100% - 80px)}}
+@media(min-width:768px) and (max-width:1000px){.header:has(.brand){height:128px}.header-inner{width:calc(100% - 48px);display:block;padding-top:17px}.header .brand{width:260px}.header nav{margin-top:12px;gap:8px;font-size:12px}.hero{height:clamp(265px,calc(100svh - 485px),415px)}}
+@media(max-width:767px){.header:has(.brand){height:80px;padding:0}.header-inner{width:calc(100% - 40px);gap:16px}.header .brand{width:min(260px,calc(100vw - 100px))}.menu-toggle{display:flex;flex-direction:column;gap:5px;border:0;background:none;padding:10px 0;width:28px;flex:none}.menu-toggle span{height:1px;background:#c7baa1;width:100%}.header nav{display:none;position:absolute;top:80px;left:0;width:100%;padding:22px;background:#080705;margin:0;transform:none;flex-direction:column;font-size:15px;gap:12px}.header.menu-open nav{display:flex}.header nav i{transform:rotate(90deg)}.hero{height:300px}.variant-b .body-section h3{font-size:23px}.variant-b .body-section h4{font-size:17px}.heading-2 .body-section h3{padding:16px}.heading-3 .body-section h3{padding-left:15px}}
+
+/* Shared fixed background and final service invitation */
+.header:has(.brand){position:sticky;top:0;z-index:30}
+.header nav i{white-space:nowrap;flex-shrink:0;font-style:normal;font-size:11px;letter-spacing:-3px;padding-right:3px}
+.service-section{min-height:calc(100svh - 88px);padding:70px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:none;border:0;text-align:center;gap:0}
+.service-section .eyebrow{margin:0 0 48px}
+.service-section .service-title{font-size:clamp(30px,3.2vw,46px);line-height:1.9;margin:0 0 52px;font-weight:400}
+.service-section .service-cta{display:inline-flex;align-items:center;justify-content:center;min-height:76px;width:380px;max-width:100%;padding:20px 30px}
+.guide-footer{background:#000;padding:42px 0 28px;text-align:left;color:#c7baa1}
+.footer-top,.footer-bottom{width:80%;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.guide-footer .footer-top img{width:310px;max-width:40%;margin:0}
+.guide-footer nav{display:flex;justify-content:space-between;gap:36px;margin:0}
+.footer-top nav span{text-align:center;font-family:sans-serif;font-size:20px}
+.footer-top small{display:block;font-size:11px;margin-top:10px;color:#a69e8f}
+.footer-bottom{margin-top:32px;padding-top:24px;border-top:1px solid #423825}
+.footer-bottom p{margin:0;white-space:nowrap}
+.footer-bottom nav{gap:24px;font-size:14px}
+@media(max-width:1000px){.footer-top,.footer-bottom{width:calc(100% - 48px);flex-wrap:wrap}.service-section{min-height:calc(100svh - 128px)}}
+@media(max-width:767px){.service-section{min-height:calc(100svh - 80px);padding:64px 22px}.service-section .eyebrow{margin-bottom:30px}.service-section .service-title{font-size:27px;margin-bottom:36px}.service-section .service-cta{min-height:64px}.footer-top,.footer-bottom{flex-direction:column;text-align:center}.guide-footer .footer-top img{max-width:100%;width:260px}.guide-footer nav{flex-wrap:wrap;justify-content:center;gap:24px}.footer-top nav span{font-size:17px}.footer-top small{font-size:10px}.footer-bottom nav{font-size:13px;gap:18px}}
