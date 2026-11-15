@@ -31,4 +31,6 @@
 .menu-toggle{position:absolute;right:0;top:50%;transform:translateY(-50%)}
 .header nav{width:calc(100% + 40px);left:-20px;top:80px;max-width:none;font-size:15px;gap:12px}
 .service-section{height:auto;min-height:calc(100svh - 80px)}
+.page::before{bottom:auto;height:100vh;height:100lvh}
+.guide-footer .footer-top img{display:none}
 }
