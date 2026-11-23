@@ -7,6 +7,25 @@
   background-attachment: fixed;
 }
 
+/* Align the desktop navigation and hero title with the outer ivory article panel. */
+@media (min-width: 768px) {
+  .heading-selected .site-header .header-inner {
+    width: min(100% - 48px, 980px);
+  }
+
+  .heading-selected .site-header #guide-nav {
+    justify-content: space-between;
+  }
+
+  .heading-selected .hero {
+    padding-inline: 24px;
+  }
+
+  .heading-selected .hero .hero-title {
+    width: min(100%, 980px);
+  }
+}
+
 .heading-selected .article-content .article-section h2,
 .heading-selected .article-content .next-section h2 {
   padding: 14px 18px 16px;
