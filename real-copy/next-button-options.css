@@ -83,8 +83,9 @@
   transform: translateY(2px) scale(.985);
 }
 
-/* A: a restrained, clearly clickable dark face. */
+/* A: a dark face with a distinct oxblood arrow compartment. */
 .button-preview .next-button-a {
+  padding: 0 0 0 20px;
   border: 1px solid #2c2118;
   color: #f5eddf;
   background: #2c2118;
@@ -92,7 +93,20 @@
 }
 
 .button-preview .next-button-a .button-arrow {
-  color: #d4b17c;
+  align-self: stretch;
+  width: 60px;
+  height: auto;
+  flex-basis: 60px;
+  margin-left: 12px;
+  color: #fff7ef;
+  background: #8e3e36;
+  transform: none;
+}
+
+.button-preview .next-button-a .arrow-glyph {
+  display: inline-block;
+  color: inherit;
+  transition: transform .22s ease;
 }
 
 .button-preview .next-button-a:hover {
@@ -101,9 +115,23 @@
   transform: translateY(-2px);
 }
 
+.button-preview .next-button-a:hover .button-arrow {
+  background: #a4483e;
+  transform: none;
+}
+
+.button-preview .next-button-a:hover .arrow-glyph {
+  transform: translateX(5px);
+}
+
 .button-preview .next-button-a:active,
 .button-preview .next-button-a.is-tapped {
   box-shadow: 0 1px 0 rgba(73, 52, 32, .16);
+}
+
+.button-preview .next-button-a:active .button-arrow,
+.button-preview .next-button-a.is-tapped .button-arrow {
+  background: #732e29;
 }
 
 /* B: a gold keyline with a distinct filled arrow compartment. */
@@ -179,7 +207,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .button-preview .next-button,
-  .button-preview .next-button .button-arrow {
+  .button-preview .next-button .button-arrow,
+  .button-preview .next-button-a .arrow-glyph {
     transition: none;
   }
 }
