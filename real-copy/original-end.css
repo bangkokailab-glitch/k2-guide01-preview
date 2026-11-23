@@ -76,7 +76,7 @@
 .guide-footer .footer-bottom { margin-top: 32px; padding-top: 24px; border-top: 1px solid #423825; }
 .guide-footer .footer-bottom p { margin: 0; white-space: nowrap; }
 .guide-footer .footer-bottom nav { gap: 24px; font: 14px/1.5 sans-serif; }
-.guide-footer .footer-bottom nav span { color: #e1d5c1; white-space: nowrap; }
+.guide-footer .footer-bottom nav span { color: #e1d5c1; white-space: nowrap; font: 14px/1.5 sans-serif; }
 
 @media (max-width: 1000px) {
   .guide-footer .footer-top, .guide-footer .footer-bottom { width: calc(100% - 48px); flex-wrap: wrap; }
@@ -97,4 +97,5 @@
   .guide-footer .footer-top nav span { font-size: 17px; }
   .guide-footer .footer-top small { font-size: 10px; }
   .guide-footer .footer-bottom nav { flex-wrap: wrap; justify-content: center; gap: 18px; font-size: 13px; }
+  .guide-footer .footer-bottom nav span { font-size: 13px; }
 }
