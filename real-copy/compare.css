@@ -1,4 +1,9 @@
 /* An isolated design-review surface. The source article stays unchanged. */
+.compare-mode .hero {
+  background-color: #2b2118;
+  background-image: linear-gradient(90deg, rgba(15, 11, 8, .78) 0%, rgba(15, 11, 8, .54) 47%, rgba(15, 11, 8, .22) 100%), url("assets/guide-hero-study.jpg");
+  background-position: center 58%;
+}
 .design-lab { background: #e9dfd0; border-top: 1px solid #b69b72; border-bottom: 1px solid #d4c4ab; }
 .lab-inner { width: min(100% - 48px, 980px); margin: 0 auto; padding: 64px 0 70px; }
 .lab-kicker { margin: 0 0 16px; color: #8a6b42; font: 600 12px/1.4 Georgia, serif; letter-spacing: .2em; }
@@ -58,6 +63,10 @@
   .frame-box .article-content::before { left: -20px; right: -20px; }
 }
 @media (max-width: 767px) {
+  .compare-mode .hero {
+    background-image: linear-gradient(90deg, rgba(15, 11, 8, .66), rgba(15, 11, 8, .38)), url("assets/guide-hero-study.jpg");
+    background-position: 53% 60%;
+  }
   .lab-inner { padding: 42px 0 48px; }
   .lab-intro { font-size: 14px; }
   .lab-controls { gap: 21px; }
