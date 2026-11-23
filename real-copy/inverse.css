@@ -1,0 +1,24 @@
+/* Inverse reading-surface option: white field and one continuous ivory page. */
+.inverse-variant {
+  background: #fff;
+}
+
+.inverse-variant .article-shell {
+  background: #fff;
+}
+
+.inverse-variant .article-content {
+  width: min(100%, 980px);
+  padding: 116px clamp(28px, calc((100vw - 740px) / 2), 120px) 135px;
+  background: var(--ivory);
+}
+
+@media (max-width: 767px) {
+  .inverse-variant .article-shell {
+    padding-inline: 10px;
+  }
+
+  .inverse-variant .article-content {
+    padding: 67px 20px 88px;
+  }
+}
