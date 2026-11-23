@@ -1,4 +1,12 @@
 /* Selected composition: B's photo title and small headings, C's framed major headings. */
+.heading-selected .site-header #guide-nav {
+  gap: 24px;
+}
+
+.heading-selected .hero {
+  background-attachment: fixed;
+}
+
 .heading-selected .article-content .article-section h2,
 .heading-selected .article-content .next-section h2 {
   padding: 14px 18px 16px;
@@ -9,6 +17,16 @@
 }
 
 @media (max-width: 767px) {
+  .heading-selected .site-header #guide-nav {
+    gap: 5px;
+  }
+
+  .heading-selected .hero {
+    min-height: 280px;
+    padding-block: 42px;
+    background-attachment: scroll;
+  }
+
   .heading-selected .article-content .article-section h2,
   .heading-selected .article-content .next-section h2 {
     padding: 11px 9px 13px;

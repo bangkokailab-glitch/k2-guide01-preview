@@ -1,0 +1,185 @@
+/* Guide 02 link treatments, shown together only on the design comparison page. */
+.button-preview .button-compare {
+  display: block;
+  margin-top: 38px;
+}
+
+.button-preview .button-compare-note {
+  margin-bottom: 14px;
+  color: #7d6d59;
+  font: 400 13px/1.6 var(--sans);
+}
+
+.button-preview .button-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 25px 0;
+  border-top: 1px solid rgba(150, 121, 81, .32);
+}
+
+.button-preview .button-option:last-child {
+  border-bottom: 1px solid rgba(150, 121, 81, .32);
+}
+
+.button-preview .button-option .option-meta {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.button-preview .option-code {
+  color: #92734b;
+  font: 600 11px/1.4 var(--sans);
+  letter-spacing: .17em;
+}
+
+.button-preview .option-name {
+  color: #2c241b;
+  font: 500 17px/1.5 var(--serif);
+}
+
+.button-preview .option-detail {
+  color: #766d61;
+  font: 400 12px/1.5 var(--sans);
+}
+
+.button-preview .next-button {
+  appearance: none;
+  flex: 0 0 auto;
+  min-width: 260px;
+  min-height: 62px;
+  padding: 15px 20px;
+  border-radius: 0;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  transition: transform .22s ease, background-color .22s ease, border-color .22s ease, box-shadow .22s ease, color .22s ease;
+  touch-action: manipulation;
+}
+
+.button-preview .next-button .button-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  transition: transform .22s ease, background-color .22s ease, color .22s ease;
+}
+
+.button-preview .next-button:hover .button-arrow {
+  transform: translateX(5px);
+}
+
+.button-preview .next-button:focus-visible {
+  outline: 2px solid #ad8752;
+  outline-offset: 4px;
+}
+
+.button-preview .next-button:active,
+.button-preview .next-button.is-tapped {
+  transform: translateY(2px) scale(.985);
+}
+
+/* A: a restrained, clearly clickable dark face. */
+.button-preview .next-button-a {
+  border: 1px solid #2c2118;
+  color: #f5eddf;
+  background: #2c2118;
+  box-shadow: 0 5px 0 rgba(73, 52, 32, .16);
+}
+
+.button-preview .next-button-a .button-arrow {
+  color: #d4b17c;
+}
+
+.button-preview .next-button-a:hover {
+  background: #4b3624;
+  border-color: #4b3624;
+  transform: translateY(-2px);
+}
+
+.button-preview .next-button-a:active,
+.button-preview .next-button-a.is-tapped {
+  box-shadow: 0 1px 0 rgba(73, 52, 32, .16);
+}
+
+/* B: a gold keyline with a distinct filled arrow compartment. */
+.button-preview .next-button-b {
+  padding: 0 0 0 20px;
+  border: 1px solid #a88a62;
+  color: #392d21;
+  background: #fbf7ee;
+}
+
+.button-preview .next-button-b .button-arrow {
+  align-self: stretch;
+  width: 60px;
+  height: auto;
+  flex-basis: 60px;
+  margin-left: 12px;
+  color: #f9f1e1;
+  background: #775a37;
+}
+
+.button-preview .next-button-b:hover {
+  background: #fffdf8;
+  box-shadow: 0 6px 15px rgba(76, 53, 29, .1);
+}
+
+.button-preview .next-button-b:hover .button-arrow {
+  background: #5f4429;
+}
+
+/* C: an editorial page-turn row with a circular arrow marker. */
+.button-preview .next-button-c {
+  min-width: 310px;
+  padding: 12px 4px 12px 13px;
+  border: 0;
+  border-top: 1px solid #a88a62;
+  border-bottom: 1px solid #a88a62;
+  color: #392d21;
+  background: transparent;
+}
+
+.button-preview .next-button-c .button-arrow {
+  width: 40px;
+  height: 40px;
+  flex-basis: 40px;
+  border: 1px solid #8e7049;
+  border-radius: 50%;
+  color: #5e452a;
+}
+
+.button-preview .next-button-c:hover {
+  background: rgba(255, 253, 248, .68);
+}
+
+.button-preview .next-button-c:hover .button-arrow {
+  color: #fff9ed;
+  background: #775a37;
+}
+
+@media (max-width: 767px) {
+  .button-preview .button-option {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: stretch;
+    gap: 16px;
+  }
+
+  .button-preview .next-button,
+  .button-preview .next-button-c {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button-preview .next-button,
+  .button-preview .next-button .button-arrow {
+    transition: none;
+  }
+}
