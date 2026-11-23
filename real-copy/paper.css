@@ -1,0 +1,20 @@
+/* Color-only reading-surface option: ivory field and one continuous white page. */
+.paper-variant .article-shell {
+  background: var(--ivory);
+}
+
+.paper-variant .article-content {
+  width: min(100%, 980px);
+  padding: 116px clamp(28px, calc((100vw - 740px) / 2), 120px) 135px;
+  background: #fffdf9;
+}
+
+@media (max-width: 767px) {
+  .paper-variant .article-shell {
+    padding-inline: 10px;
+  }
+
+  .paper-variant .article-content {
+    padding: 67px 20px 88px;
+  }
+}
