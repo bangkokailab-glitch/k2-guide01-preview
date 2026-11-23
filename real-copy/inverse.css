@@ -1,11 +1,11 @@
-/* White field, an ivory threshold below the hero, and one continuous reading page. */
+/* One continuous ivory reading page framed by white on all four sides. */
 .inverse-variant {
   background: #fff;
 }
 
 .inverse-variant .article-shell {
-  padding-top: 64px;
-  background: linear-gradient(to bottom, var(--ivory) 0 64px, #fff 64px 100%);
+  padding: 72px 24px 84px;
+  background: #fff;
 }
 
 .inverse-variant .article-content {
@@ -89,9 +89,7 @@
 
 @media (max-width: 767px) {
   .inverse-variant .article-shell {
-    padding-top: 44px;
-    padding-inline: 10px;
-    background: linear-gradient(to bottom, var(--ivory) 0 44px, #fff 44px 100%);
+    padding: 36px 16px 48px;
   }
 
   .inverse-variant .article-content {
