@@ -24,6 +24,14 @@
   .heading-selected .hero .hero-title {
     width: min(100%, 980px);
   }
+
+  .heading-selected .article-shell {
+    padding-top: 48px;
+  }
+
+  .heading-selected .article-content {
+    padding-top: 48px;
+  }
 }
 
 .heading-selected .article-content .article-section h2,
