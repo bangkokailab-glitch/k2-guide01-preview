@@ -189,7 +189,7 @@ button { font: inherit; }
   isolation: isolate;
   color: #f2eadf;
   background-color: var(--wood);
-  background-image: linear-gradient(110deg, rgba(17, 12, 8, .88), rgba(17, 12, 8, .72)), url("assets/guide-office-background.webp");
+  background-image: linear-gradient(110deg, rgba(17, 12, 8, .88), rgba(17, 12, 8, .72)), url("assets/guide-office-background.webp?v=20261124-04");
   background-repeat: no-repeat;
   background-size: cover;
 }
