@@ -1,0 +1,100 @@
+/* Restore the closing invitation and complete footer from the approved Guide. */
+.service-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: auto;
+  min-height: 600px;
+  margin: 0;
+  padding: 100px 24px;
+  border: 0;
+  color: #fff9ed;
+  text-align: center;
+  background-color: #21180f;
+  background-image: linear-gradient(180deg, #110b0638, #110b0640), url("../assets/guide-office-background.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.service-section > * { width: auto; max-width: 100%; margin-left: 0; margin-right: 0; }
+.service-section .eyebrow {
+  margin: 0 0 30px;
+  color: #f3e6cf;
+  font: 11px/1.5 Georgia, serif;
+  letter-spacing: .25em;
+}
+.service-section .service-title {
+  margin: 0;
+  color: #fff9ed;
+  font: 400 clamp(28px, 2.55vw, 40px)/1.8 "Hiragino Mincho ProN", "Yu Mincho", serif;
+  letter-spacing: .045em;
+  text-wrap: balance;
+}
+.service-section .service-cta {
+  width: auto;
+  min-width: 310px;
+  max-width: 100%;
+  min-height: 62px;
+  margin-top: 42px;
+  padding: 18px 30px;
+  border: 1px solid #f1e6d5;
+  border-radius: 0;
+  background: #f1e6d5;
+  color: #3d3023;
+  font: 15px/normal "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  letter-spacing: .08em;
+  text-decoration: none;
+}
+.service-section .service-cta:hover { background: #fff9ee; }
+
+.guide-footer {
+  margin: 0;
+  padding: 42px 0 28px;
+  background: #000;
+  color: #c7baa1;
+  text-align: left;
+  font: 12px/2 Georgia, serif;
+}
+.guide-footer .footer-top,
+.guide-footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.guide-footer .footer-top img { display: block; width: 310px; max-width: 40%; height: auto; margin: 0; }
+.guide-footer nav { display: flex; justify-content: space-between; gap: 36px; margin: 0; }
+.guide-footer .footer-top nav span { color: #e1d5c1; text-align: center; font: 20px/1.4 sans-serif; }
+.guide-footer .footer-top small { display: block; margin-top: 10px; color: #a69e8f; font: 11px/1.5 sans-serif; }
+.guide-footer .footer-bottom { margin-top: 32px; padding-top: 24px; border-top: 1px solid #423825; }
+.guide-footer .footer-bottom p { margin: 0; white-space: nowrap; }
+.guide-footer .footer-bottom nav { gap: 24px; font: 14px/1.5 sans-serif; }
+.guide-footer .footer-bottom nav span { color: #e1d5c1; white-space: nowrap; }
+
+@media (max-width: 1000px) {
+  .guide-footer .footer-top, .guide-footer .footer-bottom { width: calc(100% - 48px); flex-wrap: wrap; }
+}
+@media (max-width: 900px) {
+  .service-section { min-height: 520px; padding: 78px 24px; }
+  .service-section .service-title { font-size: 29px; }
+  .service-section .service-cta { min-width: 280px; }
+}
+@media (max-width: 767px) {
+  .service-section { min-height: calc(100svh - 80px); padding: 76px 20px; background-attachment: scroll; }
+  .service-section .eyebrow { font-size: 9px; margin-bottom: 24px; }
+  .service-section .service-title { width: 100%; font-size: clamp(20px, 5.5vw, 27px); line-height: 1.9; letter-spacing: .005em; }
+  .service-section .service-cta { width: 100%; min-width: 0; max-width: 320px; min-height: 58px; margin-top: 33px; padding: 17px 20px; }
+  .guide-footer .footer-top, .guide-footer .footer-bottom { flex-direction: column; text-align: center; }
+  .guide-footer .footer-top img { display: none; }
+  .guide-footer .footer-top nav { flex-direction: column; justify-content: center; gap: 17px; }
+  .guide-footer .footer-top nav span { font-size: 17px; }
+  .guide-footer .footer-top small { font-size: 10px; }
+  .guide-footer .footer-bottom nav { flex-wrap: wrap; justify-content: center; gap: 18px; font-size: 13px; }
+}
