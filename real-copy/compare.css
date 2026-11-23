@@ -1,0 +1,74 @@
+/* An isolated design-review surface. The source article stays unchanged. */
+.design-lab { background: #e9dfd0; border-top: 1px solid #b69b72; border-bottom: 1px solid #d4c4ab; }
+.lab-inner { width: min(100% - 48px, 980px); margin: 0 auto; padding: 64px 0 70px; }
+.lab-kicker { margin: 0 0 16px; color: #8a6b42; font: 600 12px/1.4 Georgia, serif; letter-spacing: .2em; }
+.design-lab #lab-title { margin: 0 0 18px; color: #2a231c; font: 500 clamp(25px, 3vw, 36px)/1.5 var(--serif); }
+.lab-intro { max-width: 710px; margin: 0 0 34px; font: 15px/1.9 var(--sans); color: #4c4135; }
+.lab-controls { display: flex; flex-wrap: wrap; gap: 26px 40px; padding: 24px 0; border-top: 1px solid #cdbc9f; border-bottom: 1px solid #cdbc9f; }
+.lab-control-group { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.lab-control-group p { flex: 0 0 100%; margin: 0 0 4px; color: #715a3c; font: 600 12px/1.5 var(--sans); letter-spacing: .09em; }
+.lab-control-group button { padding: 10px 14px; border: 1px solid #bbaa8e; border-radius: 0; color: #392f25; background: #f8f3e8; cursor: pointer; font: 13px/1.4 var(--sans); }
+.lab-control-group button[aria-pressed="true"] { color: #f8f1e5; background: #5e4930; border-color: #5e4930; }
+.lab-control-group button:hover { border-color: #684d2b; }
+.lab-sample { width: min(100%, 780px); margin: 40px auto 0; padding: 34px 45px 40px; background: #f3ebdd; }
+.sample-label { margin: 23px 0 6px; color: #8a7457; font: 12px/1.4 var(--sans); letter-spacing: .1em; }
+.sample-label:first-child { margin-top: 0; }
+.lab-sample h2, .lab-sample h3, .lab-sample h4 { color: #29231d; font-family: var(--serif); font-weight: 500; overflow-wrap: anywhere; }
+.lab-sample .sample-major { margin: 0 0 26px; font-size: 36px; line-height: 1.48; }
+.lab-sample .sample-middle { margin: 0 0 24px; font-size: 27px; line-height: 1.55; }
+.lab-sample .sample-small { margin: 0; font-size: 18px; line-height: 1.6; font-weight: 600; }
+.sample-note { margin: 32px 0 0; padding-top: 17px; border-top: 1px solid #d6c6ad; color: #675b4c; font: 12px/1.7 var(--sans); }
+
+/* A: An editorial page where scale and whitespace alone establish hierarchy. */
+.heading-a .article-content h2 { font-size: clamp(33px, 3.15vw, 43px); }
+.heading-a .article-content h3 { font-size: clamp(24px, 2.3vw, 30px); }
+
+/* B: Small bronze rules make the hierarchy visible without breaking the page. */
+.heading-b .article-content .chapter-number { margin-bottom: 18px; }
+.heading-b .article-content h2 { position: relative; margin-bottom: 43px; padding-bottom: 20px; font-size: clamp(32px, 3vw, 40px); border-bottom: 1px solid #b99d73; }
+.heading-b .article-content h3 { margin-top: 58px; padding-left: 17px; border-left: 2px solid #9f7e50; font-size: clamp(24px, 2.2vw, 28px); }
+.heading-b .lab-sample .sample-major { padding-bottom: 14px; border-bottom: 1px solid #b99d73; font-size: 34px; }
+.heading-b .lab-sample .sample-middle { padding-left: 14px; border-left: 2px solid #9f7e50; font-size: 26px; }
+.heading-b .lab-sample .sample-small { font-family: var(--sans); font-size: 17px; letter-spacing: .04em; }
+
+/* C: A book chapter opens with a large number and quieter subheadings. */
+.heading-c .article-content .chapter-number { margin-bottom: 10px; color: #a88d67; font: 400 60px/1.08 Georgia, serif; letter-spacing: -.04em; }
+.heading-c .article-content h2 { margin-bottom: 56px; font-size: clamp(32px, 2.9vw, 39px); line-height: 1.55; }
+.heading-c .article-content h3 { margin-top: 64px; padding-top: 20px; border-top: 1px solid #cbb89a; font-size: clamp(23px, 2.1vw, 27px); }
+.heading-c .lab-sample .sample-major::before { content: "03"; display: block; margin-bottom: 8px; color: #a88d67; font: 400 54px/1 Georgia, serif; }
+.heading-c .lab-sample .sample-major { font-size: 32px; }
+.heading-c .lab-sample .sample-middle { padding-top: 16px; border-top: 1px solid #cbb89a; font-size: 25px; }
+.heading-c .lab-sample .sample-small { font-family: var(--sans); font-size: 16px; letter-spacing: .07em; }
+
+/* The lines sit outside the 740px text column, preserving line length. */
+.compare-mode .article-content { position: relative; }
+.frame-side .article-content::before,
+.frame-side .article-content::after { content: ""; position: absolute; top: 70px; bottom: 70px; width: 1px; background: #c5ae89; pointer-events: none; }
+.frame-side .article-content::before { left: -55px; }
+.frame-side .article-content::after { right: -55px; }
+.frame-side .lab-sample { border-left: 1px solid #c5ae89; border-right: 1px solid #c5ae89; }
+.frame-box .article-content::before { content: ""; position: absolute; top: 70px; bottom: 70px; left: -55px; right: -55px; border: 1px solid #c5ae89; pointer-events: none; }
+.frame-box .lab-sample { border: 1px solid #c5ae89; }
+
+@media (max-width: 900px) {
+  .frame-side .article-content::before { left: -20px; }
+  .frame-side .article-content::after { right: -20px; }
+  .frame-box .article-content::before { left: -20px; right: -20px; }
+}
+@media (max-width: 767px) {
+  .lab-inner { padding: 42px 0 48px; }
+  .lab-intro { font-size: 14px; }
+  .lab-controls { gap: 21px; }
+  .lab-control-group button { font-size: 12px; padding: 9px 10px; }
+  .lab-sample { margin-top: 28px; padding: 25px 20px 30px; }
+  .lab-sample .sample-major, .heading-b .lab-sample .sample-major, .heading-c .lab-sample .sample-major { font-size: 27px; }
+  .lab-sample .sample-middle, .heading-b .lab-sample .sample-middle, .heading-c .lab-sample .sample-middle { font-size: 21px; }
+  .lab-sample .sample-small { font-size: 16px; }
+  .heading-b .article-content h2 { font-size: clamp(27px, 7vw, 34px); }
+  .heading-c .article-content .chapter-number { font-size: 44px; }
+  .heading-c .article-content h2 { font-size: clamp(27px, 6.8vw, 34px); }
+  .heading-b .article-content h3, .heading-c .article-content h3 { font-size: 22px; }
+  .frame-side .article-content::before { left: -12px; }
+  .frame-side .article-content::after { right: -12px; }
+  .frame-box .article-content::before { left: -12px; right: -12px; top: 35px; bottom: 35px; }
+}
