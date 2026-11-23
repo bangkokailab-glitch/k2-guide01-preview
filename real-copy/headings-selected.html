@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="inverse.css?v=20261124-04">
   <link rel="stylesheet" href="heading-variants.css?v=20261124-01">
   <link rel="stylesheet" href="selected-heading.css?v=20261124-03">
+  <link rel="stylesheet" href="next-button-options.css?v=20261124-02">
 </head>
-<body class="inverse-variant heading-preview heading-b heading-selected">
+<body class="inverse-variant heading-preview heading-b heading-selected button-preview">
   <div class="site">
     <header class="site-header">
       <div class="header-inner">
@@ -96,7 +97,7 @@
           <h2 id="next-title">日本だけが選択肢か</h2>
           <p>事業、資産、家族の将来を考えるとき、私たちは無意識のうちに、日本の制度や常識を前提にしていることがあります。しかし、収入を得る市場、資産を保有する国、家族が暮らす場所、子どもが教育を受ける環境は、日本だけに限られません。次のガイドでは、世界に目を向けることで広がる人生の選択肢について考えます。</p>
           <div class="next-action">
-            <span class="next-button">Guide 02 を読む <span aria-hidden="true">→</span></span>
+            <button class="next-button next-button-a" type="button">Guide 02 を読む <span class="button-arrow" aria-hidden="true"><span class="arrow-glyph">→</span></span></button>
           </div>
         </div>
       </section>
@@ -145,6 +146,13 @@
         button.setAttribute('aria-label', 'ガイドメニューを開く');
         nav.classList.remove('is-open');
       }
+    });
+    const nextButton = document.querySelector('.next-button-a');
+    nextButton.addEventListener('click', () => {
+      nextButton.classList.remove('is-tapped');
+      void nextButton.offsetWidth;
+      nextButton.classList.add('is-tapped');
+      window.setTimeout(() => nextButton.classList.remove('is-tapped'), 380);
     });
   </script>
 </body>
