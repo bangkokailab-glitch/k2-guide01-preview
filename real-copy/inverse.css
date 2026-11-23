@@ -1,24 +1,125 @@
-/* Inverse reading-surface option: white field and one continuous ivory page. */
+/* White field, an ivory threshold below the hero, and one continuous reading page. */
 .inverse-variant {
   background: #fff;
 }
 
 .inverse-variant .article-shell {
-  background: #fff;
+  padding-top: 64px;
+  background: linear-gradient(to bottom, var(--ivory) 0 64px, #fff 64px 100%);
 }
 
 .inverse-variant .article-content {
   width: min(100%, 980px);
-  padding: 116px clamp(28px, calc((100vw - 740px) / 2), 120px) 135px;
+  padding: 72px clamp(28px, calc((100vw - 740px) / 2), 120px) 120px;
   background: var(--ivory);
+}
+
+/* Keep the bronze heading rule; let space, rather than another rule, separate chapters. */
+.inverse-variant .article-content .article-section {
+  margin-bottom: 106px;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.inverse-variant .article-content #section-05 {
+  margin-bottom: 0;
+}
+
+.inverse-variant .article-content .next-section {
+  margin-top: 98px;
+  padding-top: 57px;
+  border: 0;
+  border-top: 1px solid var(--rule);
+  color: var(--ink);
+  background: transparent;
+}
+
+.inverse-variant .next-inner {
+  width: 100%;
+  padding: 0;
+}
+
+.inverse-variant .next-section .next-label {
+  margin-bottom: 25px;
+  color: #8c6d46;
+  font-size: 12px;
+  letter-spacing: .18em;
+}
+
+.inverse-variant .next-section h2 {
+  margin: 0 0 28px;
+  padding-bottom: 0;
+  border-bottom: 0;
+  color: var(--ink);
+  font: 500 clamp(28px, 2.6vw, 36px)/1.55 var(--serif);
+  letter-spacing: .035em;
+  text-wrap: balance;
+}
+
+.inverse-variant .next-section p:not(.next-label) {
+  color: #544b40;
+  font: 400 16px/1.98 var(--serif);
+  letter-spacing: .01em;
+}
+
+.inverse-variant .next-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.inverse-variant .next-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  min-width: 230px;
+  padding: 16px 20px;
+  border: 1px solid #9b7c51;
+  color: #4b3823;
+  font: 400 14px/1.6 var(--sans);
+  letter-spacing: .08em;
+}
+
+.inverse-variant .next-button span {
+  color: #8b683d;
+  font-size: 22px;
+  line-height: 1;
 }
 
 @media (max-width: 767px) {
   .inverse-variant .article-shell {
+    padding-top: 44px;
     padding-inline: 10px;
+    background: linear-gradient(to bottom, var(--ivory) 0 44px, #fff 44px 100%);
   }
 
   .inverse-variant .article-content {
-    padding: 67px 20px 88px;
+    padding: 54px 20px 88px;
+  }
+
+  .inverse-variant .article-content .article-section {
+    margin-bottom: 75px;
+  }
+
+  .inverse-variant .article-content #section-05 {
+    margin-bottom: 0;
+  }
+
+  .inverse-variant .article-content .next-section {
+    margin-top: 73px;
+    padding-top: 42px;
+  }
+
+  .inverse-variant .next-section h2 {
+    font-size: 26px;
+  }
+
+  .inverse-variant .next-section p:not(.next-label) {
+    font-size: 16px;
+  }
+
+  .inverse-variant .next-button {
+    min-width: 215px;
   }
 }
