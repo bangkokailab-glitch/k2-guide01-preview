@@ -14,6 +14,7 @@
 .sample-label { margin: 23px 0 6px; color: #8a7457; font: 12px/1.4 var(--sans); letter-spacing: .1em; }
 .sample-label:first-child { margin-top: 0; }
 .lab-sample h2, .lab-sample h3, .lab-sample h4 { color: #29231d; font-family: var(--serif); font-weight: 500; overflow-wrap: anywhere; }
+.lab-sample .sample-major, .compare-mode .article-content h2 { text-wrap: balance; }
 .lab-sample .sample-major { margin: 0 0 26px; font-size: 36px; line-height: 1.48; }
 .lab-sample .sample-middle { margin: 0 0 24px; font-size: 27px; line-height: 1.55; }
 .lab-sample .sample-small { margin: 0; font-size: 18px; line-height: 1.6; font-weight: 600; }
@@ -61,7 +62,7 @@
   .lab-controls { gap: 21px; }
   .lab-control-group button { font-size: 12px; padding: 9px 10px; }
   .lab-sample { margin-top: 28px; padding: 25px 20px 30px; }
-  .lab-sample .sample-major, .heading-b .lab-sample .sample-major, .heading-c .lab-sample .sample-major { font-size: 27px; }
+  .lab-sample .sample-major, .heading-b .lab-sample .sample-major, .heading-c .lab-sample .sample-major { font-size: clamp(21px, 6.3vw, 27px); }
   .lab-sample .sample-middle, .heading-b .lab-sample .sample-middle, .heading-c .lab-sample .sample-middle { font-size: 21px; }
   .lab-sample .sample-small { font-size: 16px; }
   .heading-b .article-content h2 { font-size: clamp(27px, 7vw, 34px); }
