@@ -21,8 +21,9 @@
 .sample-note { margin: 32px 0 0; padding-top: 17px; border-top: 1px solid #d6c6ad; color: #675b4c; font: 12px/1.7 var(--sans); }
 
 /* A: An editorial page where scale and whitespace alone establish hierarchy. */
-.heading-a .article-content h2 { font-size: clamp(33px, 3.15vw, 43px); }
-.heading-a .article-content h3 { font-size: clamp(24px, 2.3vw, 30px); }
+.heading-a .article-content .chapter-number { margin-bottom: 24px; }
+.heading-a .article-content h2 { margin-bottom: 42px; padding-bottom: 0; border-bottom: 0; font-size: clamp(33px, 3.15vw, 43px); }
+.heading-a .article-content h3 { margin-top: 62px; padding-left: 0; border-left: 0; font-size: clamp(24px, 2.3vw, 30px); }
 
 /* B: Small bronze rules make the hierarchy visible without breaking the page. */
 .heading-b .article-content .chapter-number { margin-bottom: 18px; }
@@ -34,8 +35,8 @@
 
 /* C: A book chapter opens with a large number and quieter subheadings. */
 .heading-c .article-content .chapter-number { margin-bottom: 10px; color: #a88d67; font: 400 60px/1.08 Georgia, serif; letter-spacing: -.04em; }
-.heading-c .article-content h2 { margin-bottom: 56px; font-size: clamp(32px, 2.9vw, 39px); line-height: 1.55; }
-.heading-c .article-content h3 { margin-top: 64px; padding-top: 20px; border-top: 1px solid #cbb89a; font-size: clamp(23px, 2.1vw, 27px); }
+.heading-c .article-content h2 { margin-bottom: 56px; padding-bottom: 0; border-bottom: 0; font-size: clamp(32px, 2.9vw, 39px); line-height: 1.55; }
+.heading-c .article-content h3 { margin-top: 64px; padding-top: 20px; padding-left: 0; border-top: 1px solid #cbb89a; border-left: 0; font-size: clamp(23px, 2.1vw, 27px); }
 .heading-c .lab-sample .sample-major::before { content: "03"; display: block; margin-bottom: 8px; color: #a88d67; font: 400 54px/1 Georgia, serif; }
 .heading-c .lab-sample .sample-major { font-size: 32px; }
 .heading-c .lab-sample .sample-middle { padding-top: 16px; border-top: 1px solid #cbb89a; font-size: 25px; }
@@ -65,6 +66,8 @@
   .lab-sample .sample-major, .heading-b .lab-sample .sample-major, .heading-c .lab-sample .sample-major { font-size: clamp(21px, 6.3vw, 27px); }
   .lab-sample .sample-middle, .heading-b .lab-sample .sample-middle, .heading-c .lab-sample .sample-middle { font-size: 21px; }
   .lab-sample .sample-small { font-size: 16px; }
+  .heading-a .article-content h2 { margin-bottom: 29px; font-size: clamp(28px, 7.3vw, 35px); }
+  .heading-a .article-content h3 { margin-top: 42px; font-size: 23px; }
   .heading-b .article-content h2 { font-size: clamp(27px, 7vw, 34px); }
   .heading-c .article-content .chapter-number { font-size: 44px; }
   .heading-c .article-content h2 { font-size: clamp(27px, 6.8vw, 34px); }

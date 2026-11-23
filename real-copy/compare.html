@@ -6,15 +6,15 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="K2 Family Office Guide 01。河合さんの原稿を反映した読み物デザインの確認用ページです。">
   <title>ファミリーオフィスとは｜K2 Family Office Guide 01</title>
-  <link rel="stylesheet" href="style.css?v=20261124-02">
-  <link rel="stylesheet" href="original-end.css?v=20261124-02">
-  <link rel="stylesheet" href="compare.css?v=20261124-02">
+  <link rel="stylesheet" href="style.css?v=20261124-03">
+  <link rel="stylesheet" href="original-end.css?v=20261124-03">
+  <link rel="stylesheet" href="compare.css?v=20261124-03">
 </head>
-<body class="compare-mode heading-a frame-none">
+<body class="compare-mode heading-b frame-none">
   <div class="site">
     <header class="site-header">
       <div class="header-inner">
-        <img class="brand" src="../assets/header-logo.svg" alt="K2 Family Office">
+        <img class="brand" src="assets/header-logo.svg" alt="K2 Family Office">
         <button class="menu-toggle" type="button" aria-label="ガイドメニューを開く" aria-controls="guide-nav" aria-expanded="false"><span></span><span></span><span></span></button>
         <nav id="guide-nav" aria-label="ガイドを読む順番">
           <a href="#guide01" aria-current="page">ファミリーオフィスとは</a>
@@ -35,9 +35,7 @@
         <div class="hero-title">
           <p class="eyebrow">FAMILY OFFICE GUIDE 01</p>
           <h1 id="page-title">ファミリーオフィスとは</h1>
-          <p class="hero-sub">事業・資産・家族を、一つの視点で考える</p>
         </div>
-        <div class="hero-signature"><img src="../assets/lp-source/perspective-mark.webp" alt="PERSPECTIVE"></div>
       </section>
 
       <section class="design-lab" aria-labelledby="lab-title">
@@ -48,8 +46,8 @@
           <div class="lab-controls">
             <div class="lab-control-group" role="group" aria-label="見出しのデザイン">
               <p>見出し</p>
-              <button type="button" data-heading="a" aria-pressed="true">A　文字と余白</button>
-              <button type="button" data-heading="b" aria-pressed="false">B　細い金線</button>
+              <button type="button" data-heading="a" aria-pressed="false">A　文字と余白</button>
+              <button type="button" data-heading="b" aria-pressed="true">B　細い金線</button>
               <button type="button" data-heading="c" aria-pressed="false">C　章番号を主役に</button>
             </div>
             <div class="lab-control-group" role="group" aria-label="本文の枠">
@@ -150,7 +148,7 @@
 
     <footer class="guide-footer">
       <div class="footer-top">
-        <img src="../assets/header-logo.svg" alt="K2 Family Office">
+        <img src="assets/header-logo.svg" alt="K2 Family Office">
         <nav aria-label="フッター">
           <span>Media<small>記事を読む</small></span>
           <span>Guide<small>ファミリーオフィスを知る</small></span>
@@ -188,7 +186,7 @@
   <script>
     (() => {
       const params = new URLSearchParams(location.search);
-      let heading = ["a", "b", "c"].includes(params.get("heading")) ? params.get("heading") : "a";
+      let heading = ["a", "b", "c"].includes(params.get("heading")) ? params.get("heading") : "b";
       let frame = ["none", "side", "box"].includes(params.get("frame")) ? params.get("frame") : "none";
       const apply = () => {
         document.body.classList.remove("heading-a", "heading-b", "heading-c", "frame-none", "frame-side", "frame-box");

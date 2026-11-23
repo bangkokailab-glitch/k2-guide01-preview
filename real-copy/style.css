@@ -82,73 +82,47 @@ button { font: inherit; }
 .site-header #guide-nav .nav-separator { color: var(--bronze-light); font-size: .85em; }
 .menu-toggle { display: none; }
 
-/* A finite hero image avoids mobile address-bar background rescaling. */
+/* A shallow editorial banner keeps the folio on the right and the title on wood. */
 .hero {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: clamp(480px, calc(100svh - 150px), 640px);
+  min-height: clamp(300px, 26vw, 410px);
   isolation: isolate;
   overflow: hidden;
-  padding: 62px 24px 42px;
+  padding: 65px 48px;
   color: #f6eee0;
-  text-align: center;
+  text-align: left;
   background-color: #2a1e15;
-  background-image: linear-gradient(180deg, rgba(11, 8, 6, .48), rgba(11, 8, 6, .51)), url("../assets/guide-office-background.webp");
+  background-image: linear-gradient(90deg, rgba(14, 9, 6, .70) 0%, rgba(14, 9, 6, .48) 42%, rgba(14, 9, 6, .08) 76%), url("assets/guide-hero-leather.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(90deg, rgba(6, 5, 4, .18), transparent 45%, rgba(6, 5, 4, .15));
-  pointer-events: none;
-}
-.hero .hero-title { width: min(100%, 1080px); margin: 0 auto; }
+.hero .hero-title { width: min(100%, 1160px); margin: 0 auto; }
 .hero .eyebrow,
 .hero .hero-title .eyebrow {
   display: block;
-  margin: 0 0 28px;
+  margin: 0 0 20px;
   color: #e6d4b5;
-  font: 600 14px/1.5 var(--serif);
-  letter-spacing: .25em;
+  font: 500 13px/1.5 var(--serif);
+  letter-spacing: .2em;
+}
+.hero .eyebrow::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 1px;
+  margin-top: 18px;
+  background: var(--bronze-light);
 }
 .hero h1,
 .hero .hero-title h1 {
   margin: 0;
-  font: 400 clamp(38px, 4.1vw, 59px)/1.5 var(--serif);
-  letter-spacing: .09em;
-  text-shadow: 0 2px 14px rgba(0,0,0,.24);
-}
-.hero .hero-title .hero-sub {
-  margin: 18px 0 0;
-  font: 400 clamp(17px, 1.8vw, 25px)/1.8 var(--serif);
-  letter-spacing: .07em;
-}
-.hero .hero-signature { width: 100%; margin-top: auto; padding-top: 35px; }
-.hero .hero-signature img {
-  display: block;
-  /* The supplied 1440px brand asset includes transparent side margins. */
-  width: 900px;
-  max-width: none;
-  height: auto;
-  margin: 0 0 0 50%;
-  transform: translateX(-50%);
-  object-fit: contain;
-  filter: drop-shadow(0 2px 10px rgba(0,0,0,.32));
-}
-.hero .hero-signature span,
-.hero .hero-signature p {
-  display: block;
-  margin: 12px 0 0;
-  color: #dcc5a1;
-  font: 500 13px/1.6 var(--serif);
-  letter-spacing: .3em;
+  font: 400 clamp(38px, 4vw, 58px)/1.45 var(--serif);
+  letter-spacing: .06em;
+  text-shadow: 0 2px 12px rgba(0,0,0,.32);
 }
 
 /* One uninterrupted ivory reading surface across the full viewport. */
@@ -163,21 +137,26 @@ button { font: inherit; }
 .article-content .article-section:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
 .article-content .chapter-number {
   display: block;
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   color: #92734b;
   font: 600 13px/1.5 var(--serif);
   letter-spacing: .25em;
 }
 .article-content h2 {
-  margin: 0 0 42px;
+  margin: 0 0 43px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b99d73;
+  text-wrap: balance;
   color: #2a241e;
-  font: 500 clamp(33px, 3.15vw, 43px)/1.52 var(--serif);
+  font: 500 clamp(32px, 3vw, 40px)/1.52 var(--serif);
   letter-spacing: .045em;
 }
 .article-content h3 {
-  margin: 62px 0 25px;
+  margin: 58px 0 25px;
+  padding-left: 17px;
+  border-left: 2px solid #9f7e50;
   color: #2e281f;
-  font: 600 clamp(24px, 2.3vw, 30px)/1.65 var(--serif);
+  font: 600 clamp(24px, 2.2vw, 28px)/1.65 var(--serif);
   letter-spacing: .035em;
 }
 .article-content h2 + h3 { margin-top: 0; }
@@ -210,7 +189,7 @@ button { font: inherit; }
   isolation: isolate;
   color: #f2eadf;
   background-color: var(--wood);
-  background-image: linear-gradient(110deg, rgba(17, 12, 8, .88), rgba(17, 12, 8, .72)), url("../assets/guide-office-background.webp");
+  background-image: linear-gradient(110deg, rgba(17, 12, 8, .88), rgba(17, 12, 8, .72)), url("assets/guide-office-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -298,23 +277,19 @@ button { font: inherit; }
   .site-header #guide-nav a.is-current::after { bottom: 6px; right: auto; width: 100%; }
   .site-header #guide-nav .nav-separator { display: none; }
 
-  .hero { min-height: 580px; padding: 78px 20px 42px; background-position: 49% center; }
+  .hero { min-height: 350px; padding: 56px 24px; background-position: 55% center; }
   .hero .eyebrow,
-  .hero .hero-title .eyebrow { margin-bottom: 32px; font-size: 11px; letter-spacing: .19em; }
+  .hero .hero-title .eyebrow { margin-bottom: 20px; font-size: 11px; letter-spacing: .16em; }
+  .hero .eyebrow::after { margin-top: 16px; }
   .hero h1,
-  .hero .hero-title h1 { font-size: clamp(22px, 7.15vw, 28px); line-height: 1.42; letter-spacing: .015em; white-space: nowrap; }
-  .hero .hero-title .hero-sub { margin-top: 24px; font-size: 16px; line-height: 1.8; letter-spacing: .03em; }
-  .hero .hero-signature { padding-top: 65px; }
-  .hero .hero-signature img { width: 760px; }
-  .hero .hero-signature span,
-  .hero .hero-signature p { font-size: 11px; letter-spacing: .22em; }
+  .hero .hero-title h1 { font-size: clamp(22px, 6.2vw, 29px); line-height: 1.5; letter-spacing: .015em; white-space: nowrap; }
 
   .article-shell { padding: 0 24px; }
   .article-content { padding: 67px 0 88px; }
   .article-content .article-section { padding-bottom: 64px; margin-bottom: 66px; }
-  .article-content .chapter-number { margin-bottom: 19px; font-size: 12px; }
-  .article-content h2 { margin-bottom: 29px; font-size: clamp(28px, 7.3vw, 35px); line-height: 1.57; }
-  .article-content h3 { margin: 42px 0 18px; font-size: 23px; line-height: 1.6; }
+  .article-content .chapter-number { margin-bottom: 16px; font-size: 12px; }
+  .article-content h2 { margin-bottom: 31px; padding-bottom: 16px; font-size: clamp(27px, 7vw, 34px); line-height: 1.57; }
+  .article-content h3 { margin: 42px 0 18px; padding-left: 14px; font-size: 22px; line-height: 1.6; }
   .article-content p,
   .article-content li { font-size: 16px; line-height: 2; letter-spacing: .005em; margin-bottom: 1.35em; }
   .article-content .lead { font-size: 17px; }
