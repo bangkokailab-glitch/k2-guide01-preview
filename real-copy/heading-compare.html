@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Guide 01 見出しデザイン比較｜K2 Family Office</title>
+  <style>
+    :root { --ink:#29221b; --gold:#a88657; --ivory:#f3ecdf; }
+    * { box-sizing:border-box; }
+    html { background:#fff; }
+    body { margin:0; color:var(--ink); font-family:"Yu Mincho","Hiragino Mincho ProN",serif; }
+    .mast { background:#050505; padding:25px 24px 21px; text-align:center; }
+    .mast img { display:block; width:min(315px,80vw); height:auto; margin:auto; }
+    .intro { max-width:1160px; padding:66px 30px 42px; margin:auto; }
+    .eyebrow { color:#8a6942; font:600 12px/1.6 Georgia,serif; letter-spacing:.2em; }
+    h1 { margin:14px 0 16px; font-size:clamp(27px,3vw,44px); font-weight:500; letter-spacing:.04em; }
+    .intro p { margin:0; font-size:15px; line-height:1.9; }
+    .grid { max-width:1160px; margin:0 auto 86px; padding:0 30px; display:grid; gap:22px; grid-template-columns:repeat(3,minmax(0,1fr)); }
+    .card { border:1px solid #d8c9b3; background:#fff; min-width:0; display:flex; flex-direction:column; }
+    .card-head { background:#201912; color:#f5eddf; padding:24px 25px 22px; }
+    .card-head .eyebrow { color:#c4a472; }
+    .card-head h2 { margin:7px 0 0; font-size:25px; font-weight:500; }
+    .card-body { background:var(--ivory); flex:1; padding:28px 24px 30px; }
+    .sample-label { color:#8a6942; font:600 10px/1.5 Georgia,serif; letter-spacing:.15em; margin:0 0 12px; }
+    .sample-hero { background:linear-gradient(110deg,#1e120b,#48301d); color:#fff6e7; margin:0 0 28px; padding:30px 18px; min-height:103px; display:flex; align-items:center; }
+    .sample-hero span { font-size:clamp(17px,1.65vw,22px); letter-spacing:.02em; white-space:nowrap; }
+    .sample-section { min-height:64px; font-size:clamp(18px,1.7vw,22px); white-space:nowrap; margin:0 0 23px; }
+    .sample-small { font-size:clamp(16px,1.5vw,19px); white-space:nowrap; margin:0; }
+    .a .sample-hero span { position:relative; padding-bottom:13px; }
+    .a .sample-hero span::after { content:""; position:absolute; bottom:0; left:0; width:80px; height:1px; background:#c7a46b; }
+    .a .sample-section { position:relative; padding-bottom:17px; }
+    .a .sample-section::after { content:""; position:absolute; bottom:0; left:0; width:84px; height:1px; background:#a88657; }
+    .a .sample-section::before { content:""; position:absolute; bottom:-3px; left:89px; width:6px; height:6px; background:#a88657; transform:rotate(45deg); }
+    .a .sample-small { padding-left:18px; position:relative; }
+    .a .sample-small::before { content:""; position:absolute; left:2px; top:.65em; width:6px; height:6px; border:1px solid #a88657; transform:rotate(45deg); }
+    .b .sample-hero span { border-left:1px solid #c7a46b; padding:5px 0 5px 12px; }
+    .b .sample-section { border-left:2px solid #a88657; padding-left:14px; font-weight:600; }
+    .b .sample-small { display:inline-block; padding-bottom:8px; border-bottom:1px solid #a88657; font-weight:600; }
+    .c .sample-hero span { border:1px solid #b89662; padding:8px 7px; }
+    .c .sample-section { border:1px solid #ab8d62; box-shadow:inset 0 0 0 4px var(--ivory),inset 0 0 0 5px #c8b18b; padding:10px 7px; }
+    .c .sample-small { display:inline-block; border-left:1px solid #a88657; border-bottom:1px solid #a88657; padding:5px 10px; }
+    .card-foot { padding:19px 24px 22px; }
+    .card-foot p { margin:0 0 18px; font-size:13px; line-height:1.7; min-height:44px; }
+    .card-foot a { display:block; padding:11px 14px; border:1px solid #9a784e; color:#4b3522; text-align:center; text-decoration:none; font-size:14px; transition:background .2s,color .2s; }
+    .card-foot a:hover,.card-foot a:focus-visible { background:#4b3522; color:#fff; }
+    @media(max-width:850px) { .grid { grid-template-columns:1fr; max-width:540px; } .card-foot p { min-height:0; } .sample-hero span,.sample-section,.sample-small { font-size:clamp(17px,5vw,22px); } }
+    @media(max-width:380px) { .intro { padding:45px 18px 29px; } .grid { padding:0 18px; } .card-body { padding:24px 18px; } .sample-hero span,.sample-section { font-size:17px; } }
+  </style>
+</head>
+<body>
+  <header class="mast"><img src="assets/header-logo.svg" alt="K2 Family Office"></header>
+  <main>
+    <div class="intro">
+      <div class="eyebrow">FAMILY OFFICE GUIDE 01</div>
+      <h1>見出しデザイン 3案</h1>
+      <p>本文とページ構成は共通です。大・中・小見出しの文字組みと装飾を比べられます。</p>
+    </div>
+    <div class="grid">
+      <section class="card a" aria-labelledby="card-a">
+        <div class="card-head"><div class="eyebrow">OPTION A</div><h2 id="card-a">装丁のような金線</h2></div>
+        <div class="card-body"><div class="sample-label">大見出し</div><div class="sample-hero"><span>ファミリーオフィスとは</span></div><div class="sample-label">中見出し</div><div class="sample-section">家族のための全体設計</div><div class="sample-label">小見出し</div><div class="sample-small">30億円の売却後</div></div>
+        <div class="card-foot"><p>短い金線と菱形で、書籍の装丁を思わせる静かな格を出します。</p><a href="headings-a.html">A案を全文で見る →</a></div>
+      </section>
+      <section class="card b" aria-labelledby="card-b">
+        <div class="card-head"><div class="eyebrow">OPTION B</div><h2 id="card-b">経済誌の文字組み</h2></div>
+        <div class="card-body"><div class="sample-label">大見出し</div><div class="sample-hero"><span>ファミリーオフィスとは</span></div><div class="sample-label">中見出し</div><div class="sample-section">家族のための全体設計</div><div class="sample-label">小見出し</div><div class="sample-small">30億円の売却後</div></div>
+        <div class="card-foot"><p>縦の金線と明確な文字の強弱で、落ち着いて読める誌面にします。</p><a href="headings-b.html">B案を全文で見る →</a></div>
+      </section>
+      <section class="card c" aria-labelledby="card-c">
+        <div class="card-head"><div class="eyebrow">OPTION C</div><h2 id="card-c">細い金枠</h2></div>
+        <div class="card-body"><div class="sample-label">大見出し</div><div class="sample-hero"><span>ファミリーオフィスとは</span></div><div class="sample-label">中見出し</div><div class="sample-section">家族のための全体設計</div><div class="sample-label">小見出し</div><div class="sample-small">30億円の売却後</div></div>
+        <div class="card-foot"><p>本文を囲まず、見出しだけに細い枠を使って輪郭をつけます。</p><a href="headings-c.html">C案を全文で見る →</a></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
