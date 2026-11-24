@@ -1,0 +1,5 @@
+/* Comparison variant: extend the existing article ivory through its outer margins. */
+.full-ivory.inverse-variant,
+.full-ivory.inverse-variant .article-shell {
+  background: var(--ivory);
+}
