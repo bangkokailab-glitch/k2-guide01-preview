@@ -22,4 +22,11 @@
   .guide-long .next-action.guide03-choices {
     grid-template-columns: 1fr;
   }
+
+  body.guide-long .next-section #next-title {
+    font-size: clamp(19px, 5.5vw, 23px);
+    white-space: nowrap;
+    text-wrap: nowrap;
+    overflow-wrap: normal;
+  }
 }
