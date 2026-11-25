@@ -1,0 +1,17 @@
+/* Same composition as dark-next.css, with only the closing band's background changed. */
+body.dark-next.photo-next .next-section.dark-next-section.photo-next-section {
+  background-image:
+    linear-gradient(90deg, rgba(14, 9, 6, .86) 0%, rgba(14, 9, 6, .74) 48%, rgba(14, 9, 6, .52) 100%),
+    url("assets/guide-office-background.webp?v=20261124-04");
+  background-position: center 83%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* iOS enlarges fixed CSS backgrounds while the browser chrome changes height. */
+@media (max-width: 980px) {
+  body.dark-next.photo-next .next-section.dark-next-section.photo-next-section {
+    background-attachment: scroll;
+  }
+}
