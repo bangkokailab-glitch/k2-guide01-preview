@@ -361,3 +361,58 @@ body::before {
   .next-description { font-size: 15.5px; line-height: 1.9; margin-bottom: 31px; }
   .next-button { width: min(100%, 340px); }
 }
+
+/* The cover and closing invitation follow the original Guide's centered frame. */
+.site { width: min(100%, 1440px); margin: 0 auto; }
+body::before { left: 50%; width: min(100%, 1440px); transform: translateX(-50%); background-image: linear-gradient(180deg, #110b0638, #110b0640), url("assets/guide-office-background.webp"); }
+
+@media (min-width: 901px) {
+  .site-header { height: 150px; }
+  .header-inner { width: min(1000px, calc(100% - 48px)); max-width: none; height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 18px; padding: 16px 0; }
+  .brand-link { margin: 0 auto; }
+  .brand { width: 310px; }
+  #guide-nav { width: 100%; max-width: 1000px; gap: 10px; }
+  #guide-nav a, #guide-nav span { font-size: 15px; }
+}
+
+.hero { height: clamp(250px, calc(100svh - 500px), 400px); min-height: 0; justify-content: center; align-items: center; text-align: center; padding: 42px 24px 34px; background: none; }
+.hero-inner { width: min(1000px, 100%); padding: 0; transform: translateY(-25px); }
+.hero-copy { max-width: none; padding: 0; border: 0; }
+.hero-eyebrow { margin: 0 0 26px; color: #ddc7a2; font-size: 16px; line-height: 1.6; letter-spacing: .27em; }
+.hero h1 { margin: 0; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.55; letter-spacing: .055em; text-shadow: 0 2px 14px #0005; }
+
+.perspective-intro { width: 100%; overflow: hidden; }
+.perspective-intro img { width: 100%; height: auto; }
+
+.article { width: min(1000px, calc(100% - 48px)); padding: 0 52px; }
+
+.next-section { min-height: 600px; padding: 100px 24px; justify-content: center; text-align: center; background: linear-gradient(#100b0666, #100b06bb); }
+.next-inner { width: min(1000px, 100%); padding: 0; }
+.next-kicker { margin: 0 0 30px; color: #f3e6cf; font: 11px/1.5 Georgia, serif; letter-spacing: .25em; }
+.next-section h2 { margin: 0; color: #fff9ed; font: 400 clamp(28px, 2.55vw, 40px)/1.8 "Hiragino Mincho ProN", "Yu Mincho", serif; letter-spacing: .045em; text-wrap: balance; }
+.next-description { max-width: 760px; margin: 22px auto 0; color: #fff9ed; font-size: 17px; line-height: 1.9; }
+.next-button { display: inline-flex; align-items: center; justify-content: center; width: auto; min-width: 310px; max-width: 100%; min-height: 62px; margin: 42px auto 0; padding: 18px 30px; border: 1px solid #f1e6d5; background: #f1e6d5; color: #3d3023; font: 15px/normal "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; letter-spacing: .08em; text-align: center; }
+.next-button:hover { background: #fff9ee; }
+
+@media (max-width: 900px) {
+  .article { width: calc(100% - 48px); padding: 0 40px; }
+  .next-section { min-height: 520px; padding: 78px 24px; }
+  .next-section h2 { font-size: 29px; }
+  .next-button { min-width: 280px; }
+}
+
+@media (max-width: 620px) {
+  .hero { height: 300px; min-height: 0; padding: 38px 20px; }
+  .hero-inner { width: 100%; transform: translateY(-20px); }
+  .hero-copy { padding: 0; }
+  .hero-eyebrow { margin-bottom: 24px; font-size: 11px; letter-spacing: .19em; }
+  .hero h1 { font-size: clamp(24px, 7.5vw, 27px); line-height: 1.7; letter-spacing: .01em; white-space: nowrap; }
+  .perspective-intro { height: 116px; }
+  .perspective-intro img { position: relative; left: 50%; width: 760px; max-width: none; transform: translateX(-50%); }
+  .article { width: calc(100% - 28px); padding: 0 22px; }
+  .next-section { min-height: 490px; padding: 76px 20px; }
+  .next-kicker { margin-bottom: 24px; font-size: 9px; }
+  .next-section h2 { font-size: clamp(20px, 5.5vw, 27px); line-height: 1.9; letter-spacing: .005em; }
+  .next-description { font-size: 16px; }
+  .next-button { width: 100%; min-width: 0; max-width: 320px; min-height: 58px; margin-top: 33px; padding: 17px 20px; }
+}
