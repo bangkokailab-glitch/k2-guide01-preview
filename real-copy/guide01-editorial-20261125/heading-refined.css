@@ -22,8 +22,8 @@ body { font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
 .closing-line p { font-size: 22px; line-height: 1.85; letter-spacing: .025em; }
 
 /* The cover title must remain visibly dominant over article headings. */
-.chapter h2 { font-size: clamp(32px, 2.65vw, 38px); line-height: 1.48; letter-spacing: .035em; }
-.chapter h3 { font-size: clamp(23px, 1.85vw, 26px); line-height: 1.6; letter-spacing: .03em; }
+.chapter h2 { font-size: clamp(30px, 2.25vw, 33px); line-height: 1.48; letter-spacing: .025em; }
+.chapter h3 { font-size: clamp(21px, 1.65vw, 24px); line-height: 1.6; letter-spacing: .025em; }
 .chapter:not(.chapter-one) > .chapter-heading { border-top: 0; padding-top: 0; }
 .chapter-heading h2::after { content: none; }
 .chapter-kicker { color: #86663c; }
@@ -53,8 +53,8 @@ body { font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
 
 /* B — architectural: one strong, brushed-gold vertical axis. */
 .heading-b .chapter h2 {
-  padding-left: 25px;
-  border-left: 4px solid #ad8851;
+  padding-left: 12px;
+  border-left: 3px solid #ad8851;
   border-image: var(--metal-gold-vertical) 1;
 }
 .heading-b .chapter h3 { display: flex; align-items: baseline; gap: 15px; }
@@ -110,8 +110,8 @@ body { font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
   .statement-light p,
   .statement-rule p { font-size: 18px; line-height: 1.85; }
   .closing-line p { font-size: 20px; line-height: 1.8; }
-  .chapter h2 { font-size: 24px; line-height: 1.52; letter-spacing: .02em; }
-  .chapter h3 { font-size: 20px; line-height: 1.55; letter-spacing: .015em; }
+  .chapter h2 { font-size: 23px; line-height: 1.52; letter-spacing: .015em; }
+  .chapter h3 { font-size: 19px; line-height: 1.55; letter-spacing: .015em; }
   .chapter-heading { margin-bottom: 31px; }
   .opening-copy h2 { margin-bottom: 21px; }
   .heading-a .chapter h2::before { width: 64px; height: 2px; margin-bottom: 18px; }
