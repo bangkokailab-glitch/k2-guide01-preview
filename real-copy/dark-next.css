@@ -1,4 +1,10 @@
-/* White outer frame and ivory reading panel, with a full-width dark NEXT band. */
+/* The dark version keeps one ivory surface around the reading panel. */
+body.dark-next:not(.photo-next),
+body.dark-next:not(.photo-next) .article-shell {
+  background: var(--ivory);
+}
+
+/* Ivory reading panel with a full-width dark NEXT band. */
 body.dark-next .next-section.dark-next-section {
   margin: 0;
   padding: 0 24px;
