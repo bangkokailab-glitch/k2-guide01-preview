@@ -375,10 +375,10 @@ body::before { left: 50%; width: min(100%, 1440px); transform: translateX(-50%);
   #guide-nav a, #guide-nav span { font-size: 15px; }
 }
 
-.hero { height: clamp(250px, calc(100svh - 500px), 400px); min-height: 0; justify-content: center; align-items: center; text-align: center; padding: 42px 24px 34px; background: none; }
-.hero-inner { width: min(1000px, 100%); padding: 0; transform: translateY(-25px); }
+.hero { height: 311px; min-height: 0; justify-content: center; align-items: center; text-align: center; padding: 42px 24px 34px; background: none; }
+.hero-inner { width: min(1000px, 100%); padding: 0; transform: translateY(-38px); }
 .hero-copy { max-width: none; padding: 0; border: 0; }
-.hero-eyebrow { margin: 0 0 26px; color: #ddc7a2; font-size: 16px; line-height: 1.6; letter-spacing: .27em; }
+.hero-eyebrow { margin: 0 0 32px; color: #ddc7a2; font-size: 16px; line-height: 1.6; letter-spacing: .27em; }
 .hero h1 { margin: 0; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.55; letter-spacing: .055em; text-shadow: 0 2px 14px #0005; }
 
 .perspective-intro { width: 100%; overflow: hidden; }
