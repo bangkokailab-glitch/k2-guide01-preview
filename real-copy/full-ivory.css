@@ -1,10 +1,8 @@
-/* Comparison variant: extend the existing article ivory through its outer margins. */
+/* Ivory article and photo-backed closing invitation. */
 .full-ivory.inverse-variant,
 .full-ivory.inverse-variant .article-shell {
   background: var(--ivory);
 }
-
-/* All-ivory reading layout with the NEXT invitation on the closing photograph. */
 .full-ivory.photo-next .article-shell {
   padding-bottom: 0;
 }
@@ -27,57 +25,77 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.full-ivory.photo-next .next-section.photo-next-section .next-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: min(100%, 760px);
+
+/* Match the 740px reading column within the 980px article panel. */
+body.full-ivory.photo-next .next-section.photo-next-section .next-inner {
+  display: block;
+  width: min(100%, 980px);
   margin: 0 auto;
-  padding: 0;
-  text-align: center;
+  padding: 66px clamp(28px, calc((100vw - 740px) / 2), 120px) 78px;
+  text-align: left;
 }
-.full-ivory.photo-next .photo-next-section .next-label {
-  margin: 0 0 18px;
-  color: #dcc49f;
-  font: 600 12px/1.5 Georgia, serif;
-  letter-spacing: .22em;
-}
-.full-ivory.photo-next .photo-next-section h2 {
-  margin: 0 0 20px;
-  padding: 0;
-  border: 0;
+body.full-ivory.photo-next .next-section.photo-next-section h2 {
+  margin: 0 0 30px;
+  padding: 14px 18px 16px;
+  border: 1px solid rgba(196, 164, 112, .88);
+  background: rgba(14, 9, 6, .22);
+  box-shadow: inset 0 0 0 5px rgba(14, 9, 6, .75), inset 0 0 0 6px rgba(207, 183, 131, .72);
   color: #fff9ed;
-  font: 500 clamp(30px, 3vw, 40px)/1.5 "Hiragino Mincho ProN", "Yu Mincho", serif;
-  letter-spacing: .035em;
-  white-space: nowrap;
+  font: 500 clamp(30px, 3vw, 40px)/1.5 var(--serif);
+  letter-spacing: .025em;
+  text-align: left;
+  white-space: normal;
+  text-wrap: balance;
 }
-.full-ivory.photo-next .photo-next-section p:not(.next-label) {
-  max-width: 680px;
-  margin: 0 auto;
+body.full-ivory.photo-next .next-section.photo-next-section p {
+  max-width: none;
+  margin: 0;
   color: #eee4d6;
-  font: 400 16px/1.95 "Hiragino Mincho ProN", "Yu Mincho", serif;
-  letter-spacing: .01em;
-  text-align: center;
+  font: 400 17px/2.05 var(--serif);
+  text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .22);
 }
-.full-ivory.photo-next .photo-next-section .next-action {
+body.full-ivory.photo-next .next-section.photo-next-section .next-action,
+body.full-ivory.photo-next .next-section.photo-next-section .next-action.guide03-choices {
+  display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 14px;
+  width: 100%;
   margin: 38px 0 0;
 }
-.full-ivory.photo-next .photo-next-section .next-button-b {
-  width: 300px;
+body.full-ivory.photo-next .next-section.photo-next-section .next-button-b,
+body.full-ivory.photo-next .next-section.photo-next-section .next-action.guide03-choices .next-button-b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: auto;
+  min-width: 310px;
   max-width: 100%;
+  min-height: 62px;
+  padding: 18px 30px;
+  border: 1px solid #f1e6d5;
+  border-radius: 0;
+  background: #f1e6d5;
+  box-shadow: none;
+  color: #3d3023;
+  font: 400 15px/1.5 var(--sans);
+  letter-spacing: .08em;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  transition: background-color .2s ease;
 }
-.full-ivory.photo-next.guide-long .photo-next-section .next-action.guide03-choices {
-  grid-template-columns: repeat(2, minmax(0, 300px));
-  gap: 14px;
-  width: min(100%, 614px);
-  margin-left: auto;
-  margin-right: auto;
+body.full-ivory.photo-next .next-section.photo-next-section .next-button-b:hover {
+  background: #fff9ee;
+  box-shadow: none;
+  transform: none;
 }
-.full-ivory.photo-next.guide-long .photo-next-section .guide03-choices .next-button-b {
-  width: 100%;
+body.full-ivory.photo-next .next-section.photo-next-section .next-button-b:active,
+body.full-ivory.photo-next .next-section.photo-next-section .next-button-b.is-tapped {
+  transform: none;
 }
 @media (max-width: 980px) {
   .full-ivory.photo-next .next-section.photo-next-section {
@@ -91,35 +109,37 @@
   }
   .full-ivory.photo-next .next-section.photo-next-section {
     min-height: 0;
-    padding: 76px 20px 82px;
+    padding: 76px 16px 82px;
     background-image: linear-gradient(90deg, rgba(13, 8, 5, .88), rgba(13, 8, 5, .73)), url("assets/guide-office-background.webp?v=20261124-04");
     background-position: 62% center;
   }
-  .full-ivory.photo-next .photo-next-section .next-label {
-    margin-bottom: 20px;
-    font-size: 11px;
+  body.full-ivory.photo-next .next-section.photo-next-section .next-inner {
+    padding: 50px 20px 60px;
   }
-  .full-ivory.photo-next .photo-next-section h2 {
-    margin-bottom: 22px;
-    font-size: clamp(19px, 5.2vw, 25px);
-    line-height: 1.55;
-    letter-spacing: .015em;
+  body.full-ivory.photo-next .next-section.photo-next-section h2 {
+    margin-bottom: 25px;
+    padding: 11px 9px 13px;
+    font-size: clamp(24px, 7vw, 28px);
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
   }
-  .full-ivory.photo-next .photo-next-section p:not(.next-label) {
+  body.full-ivory.photo-next .next-section.photo-next-section p {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 2;
   }
-  .full-ivory.photo-next .photo-next-section .next-action {
-    width: 100%;
-    margin-top: 30px;
-  }
-  .full-ivory.photo-next .photo-next-section .next-button-b {
-    width: 100%;
-    max-width: 320px;
-    min-width: 0;
-  }
-  .full-ivory.photo-next.guide-long .photo-next-section .next-action.guide03-choices {
+  body.full-ivory.photo-next .next-section.photo-next-section .next-action,
+  body.full-ivory.photo-next .next-section.photo-next-section .next-action.guide03-choices {
+    display: grid;
     grid-template-columns: 1fr;
-    width: min(100%, 320px);
+    gap: 12px;
+    margin-top: 32px;
+  }
+  body.full-ivory.photo-next .next-section.photo-next-section .next-button-b,
+  body.full-ivory.photo-next .next-section.photo-next-section .next-action.guide03-choices .next-button-b {
+    width: 100%;
+    min-width: 0;
+    min-height: 58px;
+    padding: 17px 20px;
+    font-size: 14px;
   }
 }
