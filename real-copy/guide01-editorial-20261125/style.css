@@ -416,3 +416,19 @@ body::before { left: 50%; width: min(100%, 1440px); transform: translateX(-50%);
   .next-description { font-size: 16px; }
   .next-button { width: 100%; min-width: 0; max-width: 320px; min-height: 58px; margin-top: 33px; padding: 17px 20px; }
 }
+
+/* Match the original Guide cover while bringing the mark closer to its title. */
+.hero { height: clamp(305px, calc(100svh - 445px), 455px); }
+.perspective-intro { position: relative; z-index: 2; margin-top: -56px; }
+.article-meta, .chapter-one > .chapter-kicker { display: none; }
+.chapter-one { padding-top: 56px; }
+.opening-copy { padding-top: 0; }
+
+@media (min-width: 621px) and (max-width: 900px) {
+  .hero { height: clamp(265px, calc(100svh - 485px), 415px); }
+}
+
+@media (max-width: 620px) {
+  .hero { height: 300px; }
+  .chapter-one { padding-top: 56px; }
+}
