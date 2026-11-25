@@ -61,7 +61,7 @@ a{color:inherit}
 .site-footer{background:#080706;color:#bba77f;padding:32px max(6vw,25px);display:flex;justify-content:space-between;gap:20px;font-size:11px}
 @media(max-width:700px){
   .site-header{min-height:84px;padding:20px 21px}.brand img{width:min(63vw,270px)}.header-note{display:none}
-  .intro{padding:76px 26px 29px}.intro h1{font-size:clamp(39px,11vw,56px);letter-spacing:.075em}.intro-inner>p:last-child{font-size:15px;line-height:2}
+  .intro{padding:76px 26px 29px}.intro h1{font-size:clamp(35px,9.5vw,43px);letter-spacing:.055em;line-height:1.38}.intro-inner>p:last-child{font-size:15px;line-height:2}
   .jump-nav{margin-top:73px;justify-content:space-between;flex-wrap:wrap;gap:15px;font-size:10px}.jump-nav .full-preview-link{width:100%;margin-top:16px;padding-bottom:11px;font-size:12px}
   .group{padding:76px 16px 85px}.group-head{margin:0 8px 38px;display:block}.group-head p{font-size:10px}.group-head h2{font-size:36px}.group-head>span{display:block;margin-top:9px;font-size:11px}
   .sample{margin-bottom:29px}.sample-meta{display:block;padding:13px 20px;font-size:10px}.sample-meta small{display:block;margin-top:6px;font-size:10px}.sample-body{padding:40px 24px 47px}
