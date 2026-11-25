@@ -37,7 +37,7 @@ button { font: inherit; }
 .hero h1 { margin: 0; font-size: clamp(44px, 5.2vw, 88px); font-weight: 400; letter-spacing: .11em; line-height: 1.35; text-wrap: balance; }
 
 .article { background: var(--paper); overflow: hidden; }
-.article-meta { max-width: var(--page); margin: auto; padding: 27px 0 22px; display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid rgba(128, 102, 63, .3); font: 12px/1.3 Georgia, serif; letter-spacing: .2em; color: #856c45; }
+.article-meta { width: min(var(--page), calc(100% - 80px)); margin: auto; padding: 27px 0 22px; display: flex; justify-content: space-between; gap: 18px; border-bottom: 1px solid rgba(128, 102, 63, .3); font: 12px/1.3 Georgia, serif; letter-spacing: .2em; color: #856c45; }
 .article-meta i { display: inline-block; width: 18px; height: 1px; background: currentColor; vertical-align: middle; margin: 0 8px 3px; }
 .chapter { width: min(var(--page), calc(100% - 80px)); margin: 0 auto; padding: clamp(92px, 9vw, 150px) 0; border-bottom: 1px solid rgba(128, 102, 63, .28); }
 .chapter-one { padding-top: 92px; }
@@ -133,7 +133,7 @@ button { font: inherit; }
   #guide-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; padding: 25px 24px 30px; background: var(--black); border-top: 1px solid rgba(216, 198, 163, .2); box-shadow: 0 12px 24px rgba(0, 0, 0, .18); }
   #guide-nav.is-open { display: grid; grid-template-columns: 1fr; gap: 4px; }
   #guide-nav a, #guide-nav span { width: max-content; font-size: 16px; padding: 12px 0; }
-  .article-meta { margin: 0 32px; }
+  .article-meta { width: calc(100% - 64px); margin: 0 32px; }
   .opening-grid, .case-grid, .case-grid-reverse { grid-template-columns: 1fr; }
   .opening-copy { padding-top: 0; }
   .opening-copy h2 br { display: none; }
@@ -152,8 +152,8 @@ button { font: inherit; }
   .hero-inner { width: calc(100% - 44px); padding-bottom: 54px; }
   .hero-copy { padding-left: 20px; }
   .hero-eyebrow { margin-bottom: 18px; font-size: 10px; letter-spacing: .22em; }
-  .hero h1 { font-size: clamp(29px, 8vw, 42px); letter-spacing: .035em; white-space: nowrap; }
-  .article-meta { margin: 0 22px; padding: 19px 0 16px; font-size: 9px; letter-spacing: .12em; }
+  .hero h1 { font-size: clamp(24px, 6.65vw, 34px); letter-spacing: .025em; white-space: nowrap; }
+  .article-meta { width: calc(100% - 44px); margin: 0 22px; padding: 19px 0 16px; font-size: 9px; letter-spacing: .12em; }
   .article-meta i { width: 10px; margin: 0 3px 3px; }
   .chapter { width: calc(100% - 44px); padding: 74px 0 84px; }
   .chapter-one { padding-top: 68px; }
