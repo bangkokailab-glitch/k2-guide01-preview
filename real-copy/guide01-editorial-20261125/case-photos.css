@@ -14,7 +14,7 @@ body.heading-i.layout-study.layout-a .article .case-two .case-photo--filled {
 }
 
 body.heading-i.layout-study.layout-a .article .case-three .case-photo--filled {
-  aspect-ratio: var(--guide-photo-ratio);
+  aspect-ratio: 2.526;
 }
 
 body.heading-i.layout-study.layout-a .article .case-photo--filled img {
@@ -37,4 +37,10 @@ body.heading-i.layout-study.layout-a .article .case-two .case-photo--filled img 
 
 body.heading-i.layout-study.layout-a .article .case-three .case-photo--filled img {
   object-position: 50% 56%;
+}
+
+@media (max-width: 900px) {
+  body.heading-i.layout-study.layout-a .article .case-three .case-photo--filled {
+    aspect-ratio: var(--guide-case-photo-ratio);
+  }
 }
