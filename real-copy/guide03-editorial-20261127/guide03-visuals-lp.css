@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/* Guide 3 diagrams follow the LP's thin matte-gold lines and restrained type. */
+body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  height: auto;
+  box-sizing: border-box;
+  margin: 28px 0 32px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-top: 1px solid #bca17b;
+  border-bottom: 1px solid #bca17b;
+  background: #f6efe4;
+  color: #2d241b;
+  text-align: left;
+  box-shadow: none;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 400;
+}
+body.guide-three.heading-i.layout-a .article .guide-visual figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* The six fields meet at one point of judgment, as in the LP's approach diagram. */
+body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--domains {
+  height: 600px;
+  color: #f3eadc;
+  background: linear-gradient(rgba(12, 8, 5, .48), rgba(12, 8, 5, .55)), url("assets/guide-office-background.webp") center / cover;
+}
+.guide-visual--domains::before {
+  content: "";
+  position: absolute;
+  inset: 27px;
+  border-left: 1px solid rgba(214, 190, 155, .23);
+  border-right: 1px solid rgba(214, 190, 155, .23);
+  pointer-events: none;
+}
+.guide-visual--domains .guide-visual__intro {
+  position: absolute;
+  z-index: 2;
+  top: 51px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #d5c2a5;
+  font-size: 17px;
+  line-height: 1.8;
+  letter-spacing: .14em;
+  text-align: center;
+}
+.guide-domains__lines {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.guide-domains__lines path { fill: none; stroke: rgba(214, 190, 155, .56); stroke-width: 1; }
+.guide-domains__lines circle { fill: #d6be9b; opacity: .72; }
+.guide-domains__terms { position: absolute; z-index: 2; inset: 0; }
+body.guide-three.heading-i.layout-a .article .guide-domains__terms span {
+  position: absolute;
+  width: 155px;
+  color: #f3eadc;
+  font: 400 27px/1.5 "Hiragino Mincho ProN", "Yu Mincho", serif;
+  letter-spacing: .17em;
+}
+.guide-domains__terms span::after { content: ""; display: block; width: 34px; height: 1px; margin-top: 8px; background: #d6be9b; opacity: .7; }
+.guide-domains__terms span:nth-child(odd) { left: 9%; text-align: left; }
+.guide-domains__terms span:nth-child(even) { right: 8%; text-align: right; }
+.guide-domains__terms span:nth-child(even)::after { margin-left: auto; }
+.guide-domains__terms span:nth-child(-n+2) { top: 168px; }
+.guide-domains__terms span:nth-child(n+3):nth-child(-n+4) { top: 273px; }
+.guide-domains__terms span:nth-child(n+5) { top: 378px; }
+.guide-domains__center {
+  position: absolute;
+  z-index: 2;
+  top: 210px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 200px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(214, 190, 155, .72);
+  border-radius: 50%;
+  background: rgba(18, 12, 8, .3);
+  text-align: center;
+}
+body.guide-three.heading-i.layout-a .article .guide-domains__center span {
+  color: #d5c2a5;
+  font: 500 15px/1.6 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .08em;
+}
+.guide-domains__center strong { font-size: 31px; font-weight: 400; line-height: 1.6; letter-spacing: .06em; }
+.guide-domains__conclusion {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 44px;
+  left: 0;
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.6;
+  letter-spacing: .09em;
+  text-align: center;
+}
+.guide-domains__conclusion small {
+  display: block;
+  margin-top: 2px;
+  color: #d5c2a5;
+  font: 500 15px/1.7 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .05em;
+}
+
+/* A decision and its timing are two independent axes, brought together below. */
+body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing { padding: 42px 5% 43px; }
+.guide-timing__columns { display: grid; grid-template-columns: minmax(0, 1fr) 58px minmax(0, 1fr); gap: 0; align-items: stretch; }
+.guide-timing__column { min-width: 0; padding: 0 6%; }
+.guide-timing__column h3 {
+  margin: 0 0 24px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #bca17b;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .09em;
+  text-align: center;
+}
+.guide-timing__column ul { margin: 0; padding: 0; list-style: none; }
+.guide-timing__column li {
+  padding: 10px 4px;
+  border-bottom: 1px solid rgba(188, 161, 123, .36);
+  font-size: 19px;
+  line-height: 1.65;
+  letter-spacing: .03em;
+  text-align: center;
+}
+body.guide-three.heading-i.layout-a .article .guide-timing__join {
+  align-self: center;
+  color: #a98e65;
+  font: 400 34px/1 "Hiragino Mincho ProN", serif;
+  text-align: center;
+}
+.guide-timing__answer {
+  width: min(760px, 90%);
+  margin: 40px auto 0;
+  padding-top: 26px;
+  border-top: 1px solid #bca17b;
+  text-align: center;
+}
+body.guide-three.heading-i.layout-a .article .guide-timing__answer span {
+  display: block;
+  margin-bottom: 7px;
+  color: #77644d;
+  font: 500 15px/1.7 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .08em;
+}
+.guide-timing__answer strong { font-size: 29px; font-weight: 400; line-height: 1.55; letter-spacing: .08em; }
+
+/* Three quiet chapters on one continuous line, without boxed STEP cards. */
+body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions {
+  padding: 42px 5% 52px;
+  color: #f3eadc;
+  background: linear-gradient(rgba(13, 10, 8, .55), rgba(13, 10, 8, .62)), url("assets/study.jpg") center 54% / cover;
+}
+.guide-questions__intro { margin: 0 0 52px; color: #d5c2a5; font-size: 20px; line-height: 1.7; letter-spacing: .12em; text-align: center; }
+.guide-questions__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.guide-questions__steps li { position: relative; min-width: 0; padding: 24px 7% 6px; border-top: 1px solid rgba(214, 190, 155, .64); text-align: center; }
+.guide-questions__steps li::before { content: ""; position: absolute; top: -4px; left: 50%; width: 7px; height: 7px; transform: translateX(-50%); border-radius: 50%; background: #d6be9b; }
+body.guide-three.heading-i.layout-a .article .guide-questions__number {
+  display: block;
+  margin-bottom: 17px;
+  color: #d6be9b;
+  font: 400 15px/1.2 Georgia, serif;
+  letter-spacing: .14em;
+}
+.guide-questions__steps strong { display: block; min-height: 81px; font-size: 25px; font-weight: 400; line-height: 1.6; letter-spacing: .04em; }
+.guide-questions__steps small { display: block; margin-top: 7px; color: #d5c2a5; font: 500 15px/1.75 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif; letter-spacing: .02em; }
+
+@media (max-width: 700px) {
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual { margin: 20px 0 25px; }
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--domains { height: 690px; }
+  .guide-visual--domains::before { inset: 17px; }
+  .guide-visual--domains .guide-visual__intro { top: 27px; padding: 0 24px; font-size: 13px; }
+  .guide-domains__lines { display: none; }
+  .guide-domains__terms { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 66px; gap: 2px 14px; position: absolute; top: 102px; right: 9%; bottom: auto; left: 9%; }
+  body.guide-three.heading-i.layout-a .article .guide-domains__terms span { position: static; width: auto; font-size: 18px; letter-spacing: .1em; text-align: center; }
+  .guide-domains__terms span::after, .guide-domains__terms span:nth-child(even)::after { width: 26px; margin: 5px auto 0; }
+  .guide-domains__center { top: 355px; width: 210px; height: 158px; }
+  .guide-domains__center::before, .guide-domains__center::after { content: ""; position: absolute; left: 50%; width: 1px; background: rgba(214, 190, 155, .56); }
+  .guide-domains__center::before { bottom: 100%; height: 47px; }
+  .guide-domains__center::after { top: 100%; height: 42px; }
+  body.guide-three.heading-i.layout-a .article .guide-domains__center span { font-size: 12px; }
+  .guide-domains__center strong { font-size: 25px; }
+  .guide-domains__conclusion { bottom: 32px; font-size: 22px; }
+  .guide-domains__conclusion small { font-size: 12px; }
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing { padding: 29px 7% 34px; }
+  .guide-timing__columns { display: block; }
+  .guide-timing__column { padding: 0; }
+  .guide-timing__column h3 { margin-bottom: 10px; padding-bottom: 8px; font-size: 22px; }
+  .guide-timing__column ul { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9px; }
+  .guide-timing__column li { padding: 8px 0; font-size: 15px; line-height: 1.55; }
+  body.guide-three.heading-i.layout-a .article .guide-timing__join { display: block; margin: 9px 0 14px; font-size: 24px; }
+  .guide-timing__answer { width: 100%; margin-top: 24px; padding-top: 17px; }
+  body.guide-three.heading-i.layout-a .article .guide-timing__answer span { font-size: 12px; }
+  .guide-timing__answer strong { font-size: 23px; }
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions { padding: 30px 8% 40px; }
+  .guide-questions__intro { margin-bottom: 31px; font-size: 16px; }
+  .guide-questions__steps { display: block; }
+  .guide-questions__steps li { min-height: 115px; margin-left: 25px; padding: 0 0 23px 29px; border-top: 0; border-left: 1px solid rgba(214, 190, 155, .64); text-align: left; }
+  .guide-questions__steps li:last-child { min-height: 0; padding-bottom: 0; }
+  .guide-questions__steps li::before { top: 6px; left: -4px; transform: none; }
+  body.guide-three.heading-i.layout-a .article .guide-questions__number { margin-bottom: 4px; font-size: 12px; }
+  .guide-questions__steps strong { min-height: 0; font-size: 20px; line-height: 1.45; }
+  .guide-questions__steps strong br { display: none; }
+  .guide-questions__steps small { margin-top: 5px; font-size: 12px; }
+}

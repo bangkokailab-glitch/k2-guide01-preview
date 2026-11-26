@@ -1,0 +1,351 @@
+/* Guide 1: editorial diagrams using the LP's restrained photographic vocabulary. */
+body.heading-i.layout-a .article .visual-plan.visual-plan--lp {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  height: auto;
+  margin: 28px 0 31px;
+  padding: 30px 34px;
+  border: 1px solid rgba(214, 190, 155, .58);
+  background:
+    linear-gradient(rgba(17, 12, 9, .52), rgba(17, 12, 9, .52)),
+    url("assets/guide-office-background.webp") center / cover;
+  color: #f3eee5;
+  box-shadow: none;
+  text-align: center;
+}
+
+body.heading-i.layout-a .article .visual-plan.visual-plan--lp.visual-plan--policy {
+  background-position: center, 42% 50%;
+}
+
+body.heading-i.layout-a .article .visual-plan.visual-plan--lp.visual-plan--advice {
+  background: #f7f2e9;
+  color: #33291f;
+}
+
+body.heading-i.layout-a .article .visual-plan.visual-plan--lp.visual-plan--funds {
+  background:
+    linear-gradient(rgba(20, 14, 10, .52), rgba(20, 14, 10, .52)),
+    url("assets/hero-leather.jpg") 50% 50% / cover;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp.visual-plan--advice .lp-diagram,
+body.heading-i.layout-a .article .visual-plan--lp.visual-plan--advice .lp-diagram__circle {
+  color: #33291f;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp.visual-plan--advice .lp-diagram__circle {
+  background: rgba(255, 255, 255, .32);
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-diagram {
+  width: 100%;
+  margin: 0 auto;
+  color: #f3eee5;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  font-weight: 300;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-diagram p {
+  margin: 0;
+  color: inherit;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-diagram__line {
+  display: block;
+  width: 1px;
+  height: 25px;
+  margin: 0 auto;
+  background: #d6be9b;
+  opacity: .9;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-diagram__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 154px;
+  margin: 0 auto;
+  border: 1px solid #d6be9b;
+  border-radius: 50%;
+  background: rgba(17, 12, 9, .35);
+  color: #f3eee5;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: .03em;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 01: family wishes guide one policy across three related domains. */
+body.heading-i.layout-a .article .visual-plan--lp .lp-policy__question {
+  font-size: 27px;
+  line-height: 1.5;
+  letter-spacing: .04em;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domains {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+  width: min(100%, 630px);
+  margin: 0 auto;
+  padding-top: 26px;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domains::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 16.6667%;
+  right: 16.6667%;
+  border-top: 1px solid #d6be9b;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domain {
+  position: relative;
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: .06em;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domain::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  width: 1px;
+  height: 20px;
+  background: #d6be9b;
+}
+
+/* 02: separate expert advice passes through the overall policy. */
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(35px, .25fr) 154px minmax(35px, .25fr) minmax(0, .9fr);
+  align-items: center;
+  max-width: 850px;
+  min-height: 260px;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice__sources {
+  min-width: 0;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice__source-title {
+  margin-bottom: 13px;
+  color: #8b6d49;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .1em;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice__source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px 19px;
+  font-size: 23px;
+  line-height: 1.45;
+  letter-spacing: .02em;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice__source-grid div {
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(214, 190, 155, .65);
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice__connector {
+  width: 100%;
+  height: 1px;
+  background: #d6be9b;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-advice__outcome {
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: .03em;
+}
+
+/* 03: one pool of assets divided by purpose. */
+body.heading-i.layout-a .article .visual-plan--lp .lp-funds__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 auto;
+  padding-top: 25px;
+  max-width: 850px;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-funds__grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  right: 12.5%;
+  border-top: 1px solid #d6be9b;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-funds__item {
+  position: relative;
+  min-height: 124px;
+  padding: 11px 11px 0;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-funds__item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  width: 1px;
+  height: 23px;
+  background: #d6be9b;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-funds__label {
+  font-size: 23px;
+  line-height: 1.4;
+  letter-spacing: .03em;
+}
+
+body.heading-i.layout-a .article .visual-plan--lp .lp-funds__detail {
+  margin-top: 9px;
+  color: #d6be9b;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .01em;
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-a .article .visual-plan.visual-plan--lp {
+    min-height: 0;
+    margin: 22px 0 25px;
+    padding: 24px 15px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-diagram__line {
+    height: 20px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-diagram__circle {
+    width: 122px;
+    height: 122px;
+    font-size: 18px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-policy__question {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domains {
+    padding-top: 20px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domain {
+    font-size: 17px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-policy__domain::before {
+    top: -20px;
+    height: 16px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    max-width: 100%;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice__sources {
+    width: 100%;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice__source-title {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice__source-grid {
+    gap: 7px 14px;
+    font-size: 17px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice__source-grid div {
+    padding-bottom: 5px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice__connector {
+    width: 1px;
+    height: 20px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-advice__outcome {
+    font-size: 18px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 12px;
+    padding-top: 20px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__grid::before {
+    left: 25%;
+    right: 25%;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__grid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: calc(50% - 4px);
+    background: #d6be9b;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__item {
+    min-height: 95px;
+    padding: 7px 5px 0;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__item::before {
+    top: -20px;
+    height: 16px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 100%;
+    border-top: 1px solid #d6be9b;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__label {
+    font-size: 17px;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--lp .lp-funds__detail {
+    margin-top: 6px;
+    font-size: 11px;
+  }
+}
