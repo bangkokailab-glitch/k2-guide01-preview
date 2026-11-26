@@ -30,6 +30,11 @@ body.guide-three .chapter-four .visual-plan {
   width: 100%;
 }
 
+/* Give the first image the lead role without changing the approved outer photo ratio. */
+body.guide-three.heading-i.layout-study.layout-a .article .chapter-two .photo-board--duo {
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+}
+
 body.guide-three .next-actions {
   display: flex;
   flex-wrap: wrap;
@@ -114,6 +119,19 @@ body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__b
   height: 34px;
   background: url("assets/header-logo.svg") left center / 195px auto no-repeat;
   opacity: .8;
+}
+body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__copy {
+  font: inherit;
+  letter-spacing: inherit;
+}
+body.guide-three .hero-eyebrow .label-number,
+body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__badge .label-number {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__title {
   color: #241d17;

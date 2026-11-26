@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* Guide 1: the four uses of capital sit inside the existing neutral diagram slot. */
+body.heading-i.layout-a .article .visual-plan--funds .funds-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  width: min(100%, 900px);
+}
+
+body.heading-i.layout-a .article .visual-plan--funds .funds-grid > div {
+  display: flex;
+  min-width: 0;
+  min-height: 96px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #ae946b;
+  border-top: 3px solid #b28b51;
+  background: #ece7dd;
+  color: #2e2820;
+  font: 400 17px/1.45 "Yu Mincho", "Hiragino Mincho ProN", serif;
+  letter-spacing: .03em;
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-a .article .visual-plan--funds .funds-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+  body.heading-i.layout-a .article .visual-plan--funds .funds-grid > div {
+    min-height: 40px;
+    padding: 5px;
+    border-top-width: 2px;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+}

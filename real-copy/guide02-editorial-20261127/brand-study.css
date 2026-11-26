@@ -208,3 +208,11 @@ body.heading-i.layout-study.layout-a.brand-study--c .article .case > .case-index
   body.heading-i.layout-study.layout-a.brand-study--c .article .chapter-three .case { padding-top: 77px; }
   body.heading-i.layout-study.layout-a.brand-study--c .article .case > .case-index { left: -1px; width: 146px; height: 47px; }
 }
+
+/* Georgia's old-style 3 drops below the baseline; line up the guide and option numerals. */
+body.heading-i.brand-study .hero-eyebrow .label-number,
+body.heading-i.brand-study .next-kicker .label-number,
+body.heading-i.layout-study.layout-a.brand-study .article .case > .case-index .label-number {
+  font-family: "Times New Roman", Times, serif;
+  font-variant-numeric: lining-nums tabular-nums;
+}
