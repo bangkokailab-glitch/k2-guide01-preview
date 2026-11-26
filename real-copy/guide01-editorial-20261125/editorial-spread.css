@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* Guide 1: varied editorial spreads inside the approved article frame only. */
+
+@media (min-width: 901px) {
+  /* Opening: a broad photograph meets the right edge of the paper. */
+  .heading-i .article .opening-grid {
+    grid-template-columns: minmax(0, .77fr) minmax(0, 1.23fr);
+    gap: clamp(28px, 3.6vw, 50px);
+    align-items: start;
+  }
+  .heading-i .article .opening-copy { padding-top: 0; }
+  .heading-i .article .opening-photo {
+    margin: 27px -52px 0 0;
+  }
+  .heading-i .article .opening-photo img {
+    aspect-ratio: 1.24;
+    object-position: 52% 48%;
+  }
+  .heading-i .article .chapter-one > .reading-column {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 72px;
+  }
+  .heading-i .article .chapter-one > .statement-light {
+    width: min(720px, 100%);
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* A text-led spread separates the introduction from the photographic cases. */
+  .heading-i .article .chapter-two-lead {
+    max-width: 660px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .heading-i .article .chapter-two > .reading-column {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .heading-i .article .chapter-two > .statement-rule {
+    max-width: 690px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* Case one: captioned landscape plate on the right, prose below. */
+  .heading-i .article .case-one .case-grid {
+    grid-template-columns: minmax(0, .76fr) minmax(0, 1.24fr);
+    gap: clamp(28px, 3.5vw, 52px);
+    align-items: center;
+  }
+  .heading-i .article .case-one .case-photo {
+    margin-right: -52px;
+  }
+  .heading-i .article .case-one .case-photo img {
+    aspect-ratio: 1.48;
+    object-position: 50% 43%;
+  }
+  .heading-i .article .case-one > .reading-column {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* Case two: a tall photograph on the left beside the original prose. */
+  .heading-i .article .case-two-photo {
+    float: left;
+    width: 40%;
+    margin: 5px 42px 22px -52px;
+  }
+  .heading-i .article .case-two-photo img {
+    aspect-ratio: 4 / 5;
+    object-position: center 72%;
+  }
+  .heading-i .article .case-two > .reading-column {
+    max-width: none;
+    margin: 0;
+  }
+
+  /* Case three: a wide photographic plate follows its heading. */
+  .heading-i .article .case-three .case-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+  }
+  .heading-i .article .case-three .case-heading {
+    order: -1;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .heading-i .article .case-three .case-photo {
+    width: calc(100% + 104px);
+    margin: 0 -52px;
+  }
+  .heading-i .article .case-three .case-photo img {
+    aspect-ratio: 2.18;
+    object-position: 50% 48%;
+  }
+  .heading-i .article .case-three > .reading-column {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* The final text spread closes the visual rhythm before the existing NEXT. */
+  .heading-i .article .chapter-four-lead {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .heading-i .article .chapter-four > .reading-column {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .heading-i .article .case-three .case-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .heading-i .article .case-three .case-heading { order: -1; }
+  .heading-i .article .case-three .case-photo { order: 0; }
+  .heading-i .article .case-three .case-photo img {
+    aspect-ratio: 1.65;
+    object-position: 50% 48%;
+  }
+}
+
+@media (max-width: 620px) {
+  .heading-i .article .opening-photo img { aspect-ratio: 1.28; }
+  .heading-i .article .case-one .case-photo img { aspect-ratio: 1.18; }
+  .heading-i .article .case-two-photo {
+    float: none;
+    width: 100%;
+    margin: 0 0 32px;
+  }
+  .heading-i .article .case-two-photo img {
+    aspect-ratio: 1.08;
+    object-position: center 68%;
+  }
+  .heading-i .article .case-three .case-photo img { aspect-ratio: 1.32; }
+}
