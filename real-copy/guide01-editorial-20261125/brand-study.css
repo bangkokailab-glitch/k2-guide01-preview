@@ -74,7 +74,6 @@ body.heading-i.layout-study.layout-a.brand-study--a .article .chapter h2::before
 }
 body.heading-i.layout-study.layout-a.brand-study--a .article .chapter > .chapter-takeaway {
   border: 1px solid #ad843f;
-  border-top: 3px solid #b5873d;
   background: linear-gradient(110deg, #ead8bb, #f6eddc 46%, #efe0c7);
   box-shadow: 0 12px 28px rgba(60, 42, 20, .075);
   color: #2b2118;

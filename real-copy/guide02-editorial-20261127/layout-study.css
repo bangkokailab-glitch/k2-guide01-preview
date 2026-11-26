@@ -185,7 +185,7 @@ body.heading-i.layout-a .article .visual-plan {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 215px;
+  min-height: 237px;
   box-sizing: border-box;
   margin: 25px 0;
   padding: 24px;
@@ -288,7 +288,7 @@ body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio:
     --guide-case-photo-ratio: 1.4;
     padding-inline: 64px;
   }
-  body.heading-i.layout-a .article .visual-plan { min-height: 180px; }
+  body.heading-i.layout-a .article .visual-plan { min-height: 198px; }
   body.heading-i.layout-study .article .chapter { padding: 47px 0 52px; }
   body.heading-i.layout-study .article .chapter-one { padding-top: 40px; }
   body.heading-i.layout-study .article .chapter-five { padding-bottom: 56px; }
@@ -345,7 +345,7 @@ body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio:
   body.heading-i.layout-a .article { padding-inline: 36px; }
   body.heading-i.layout-study.layout-a .article p { font-size: 16px; }
   body.heading-i.layout-a .article .visual-plan {
-    min-height: 165px;
+    min-height: 182px;
     padding: 18px;
   }
   body.heading-i.layout-a .article .visual-plan figcaption { font-size: 14px; }
