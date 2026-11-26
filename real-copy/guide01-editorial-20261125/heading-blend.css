@@ -2,6 +2,10 @@
 
 /* I — E's pale gilt surface and G's watermark, with a distinct case hierarchy. */
 .heading-i .chapter { border-bottom: 0; }
+.heading-i .perspective-intro img {
+  transform: scale(.85);
+  transform-origin: center top;
+}
 .heading-i .statement-light { grid-template-columns: minmax(0, 1fr); }
 .heading-i .closing-line p {
   font-size: 17px;
@@ -70,6 +74,7 @@
 }
 
 @media (max-width: 620px) {
+  .heading-i .perspective-intro img { transform: translateX(-50%) scale(.85); }
   .heading-i .closing-line p { font-size: 16px; line-height: 2; letter-spacing: .005em; }
   .heading-i .chapter h2 { padding: 10px 10px 12px; }
   .heading-i .chapter-one h2 { font-size: 23px; padding-left: 6px; padding-right: 6px; }
