@@ -388,17 +388,19 @@ body.heading-i.layout-a .article .chapter-one h2 {
   padding-inline: 16px;
 }
 body.heading-i.layout-a .article .chapter h2::before {
-  right: 8px;
-  width: 240px;
-  opacity: .11;
+  left: 52%;
+  right: auto;
+  width: 140px;
+  opacity: .12;
 }
 
 @media (max-width: 620px) {
   body.heading-i.layout-a .article .chapter h2 { width: min(100%, 320px); }
   body.heading-i.layout-a .article .chapter-one h2 { padding-inline: 10px; }
   body.heading-i.layout-a .article .chapter h2::before {
-    right: 4px;
-    width: 150px;
-    opacity: .11;
+    left: 52%;
+    right: auto;
+    width: 98px;
+    opacity: .12;
   }
 }
