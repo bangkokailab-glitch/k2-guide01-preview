@@ -134,9 +134,8 @@ body.guide-three.heading-i.layout-a .article .guide-visual--domains .guide-domai
 
 /* The two kinds of decision fit on one concise spread. */
 body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing {
-  --diagram-photo: url("assets/planning.jpg");
+  --diagram-photo: url("assets/hero-leather.jpg");
   padding: 23px 42px;
-  background-image: linear-gradient(rgba(23, 19, 15, .84), rgba(23, 19, 15, .84)), var(--diagram-photo);
 }
 .guide-timing__columns {
   display: grid;
