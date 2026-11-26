@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/* Heading-only comparisons. All three retain brand A takeaways and CASE plaques. */
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading .article .chapter h2 {
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: clamp(27px, 2vw, 30px);
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: .025em;
+  text-wrap: balance;
+  overflow: visible;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading .article .chapter h2 > span {
+  position: relative;
+  z-index: 2;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading .article .chapter h2::before,
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading .article .chapter h2::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  z-index: 1;
+  inset: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+/* 1 — Champagne foil: a bright, symmetrical LP chapter plate. */
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--foil .article .chapter h2 {
+  padding: 22px 24px 23px !important;
+  border: 1px solid #986c31;
+  background:
+    linear-gradient(111deg, transparent 6%, rgba(255, 255, 255, .55) 22%, transparent 36%),
+    linear-gradient(102deg, #aa7a37 0%, #e7c67e 16%, #fff3cf 36%, #c18c3c 57%, #f5dc9e 76%, #ad7d38 100%);
+  box-shadow: inset 0 2px 0 rgba(255, 248, 213, .82), inset 0 -3px 0 rgba(100, 60, 18, .34), 0 8px 20px rgba(73, 46, 18, .14);
+  color: #24180d;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 248, 214, .64);
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--foil .article .chapter h2::before {
+  top: 7px !important;
+  left: 11px !important;
+  width: calc(100% - 22px) !important;
+  height: 1px !important;
+  background: linear-gradient(90deg, transparent, #fffbe5 23%, #fff 50%, #fffbe5 77%, transparent) !important;
+  box-shadow: 0 0 9px rgba(255, 255, 232, .85) !important;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--foil .article .chapter h2::after {
+  bottom: -6px !important;
+  left: calc(50% - 6px) !important;
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #8b5d25;
+  background: linear-gradient(135deg, #fff0ba, #ae782e 50%, #f8de96) !important;
+  box-shadow: 0 2px 6px rgba(78, 47, 13, .23) !important;
+  transform: rotate(45deg) !important;
+}
+
+/* 2 — Obsidian foil: a dark, directional chapter plate. */
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--obsidian .article .chapter h2 {
+  padding: 22px 42px 23px !important;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(106deg, #0e0c0a, #302218 53%, #18110d) padding-box,
+    linear-gradient(105deg, #b48642, #fff0b4 30%, #815624 58%, #e7c481 84%, #8d5d29) border-box;
+  box-shadow: inset 0 1px 0 rgba(255, 243, 193, .35), inset 0 -2px 0 rgba(0, 0, 0, .5), 0 10px 24px rgba(34, 21, 9, .22);
+  color: #e5bb72;
+  text-align: left;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--obsidian .article .chapter h2 > span {
+  background: linear-gradient(180deg, #fff2c5 0%, #e6b96e 48%, #b77d30 78%, #f4d994 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--obsidian .article .chapter h2::before {
+  top: 12px !important;
+  bottom: 12px !important;
+  left: 16px !important;
+  width: 5px !important;
+  height: auto !important;
+  background: linear-gradient(180deg, #8a571e, #fff0b4 39%, #a36b26 67%, #e1b571) !important;
+  box-shadow: 1px 0 8px rgba(241, 193, 104, .44) !important;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--obsidian .article .chapter h2::after {
+  top: 2px !important;
+  right: 2px !important;
+  width: 24% !important;
+  height: calc(100% - 4px) !important;
+  background: linear-gradient(115deg, transparent 15%, rgba(255, 226, 160, .11) 49%, transparent 80%) !important;
+}
+
+/* 3 — Gilt architecture: a gold column and a light chapter field. */
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--column .article .chapter h2 {
+  padding: 22px 28px 23px 93px !important;
+  border-top: 1px solid #8e602a;
+  border-right: 1px solid #aa7d40;
+  border-bottom: 4px solid #9f6e2e;
+  border-left: 0;
+  background:
+    linear-gradient(111deg, rgba(255, 255, 255, .55) 16%, transparent 37%),
+    linear-gradient(90deg, #e6c994 0%, #fff5e1 57%, #e8c98e 100%);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, .7), 0 8px 20px rgba(78, 48, 15, .13);
+  color: #24180d;
+  text-align: left;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--column .article .chapter h2::before {
+  top: 0 !important;
+  bottom: -4px !important;
+  left: 0 !important;
+  width: 64px !important;
+  height: auto !important;
+  border-right: 3px solid #f5dc9e;
+  background: linear-gradient(135deg, #563512 0%, #ba8639 24%, #fff0b9 49%, #a46b2b 70%, #6e471c 100%) !important;
+  box-shadow: 3px 0 9px rgba(104, 69, 26, .18) !important;
+}
+body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--column .article .chapter h2::after {
+  top: calc(50% - 7px) !important;
+  left: 24px !important;
+  width: 14px !important;
+  height: 14px !important;
+  border: 1px solid #ffebae;
+  background: #2a1a0e !important;
+  box-shadow: 0 0 0 2px rgba(76, 46, 15, .24), 0 0 13px rgba(255, 236, 178, .8) !important;
+  transform: rotate(45deg) !important;
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading .article .chapter h2 {
+    font-size: clamp(21px, 5.9vw, 23px);
+    line-height: 1.5;
+    letter-spacing: .01em;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--foil .article .chapter h2 {
+    padding: 16px 11px 17px !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--foil .article .chapter h2::before {
+    top: 5px !important;
+    left: 7px !important;
+    width: calc(100% - 14px) !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--obsidian .article .chapter h2 {
+    padding: 16px 15px 17px 30px !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--obsidian .article .chapter h2::before {
+    top: 9px !important;
+    bottom: 9px !important;
+    left: 12px !important;
+    width: 4px !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--column .article .chapter h2 {
+    padding: 16px 12px 17px 50px !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--column .article .chapter h2::before {
+    width: 36px !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study.brand-study--a.luxe-heading--column .article .chapter h2::after {
+    top: calc(50% - 5px) !important;
+    left: 13px !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
