@@ -16,6 +16,11 @@ body.guide-three .hero h1 {
   text-wrap: balance;
 }
 
+body.guide-three .hero-title-first,
+body.guide-three .hero-title-rest {
+  display: block;
+}
+
 body.guide-three .chapter-one .opening-copy {
   max-width: none;
 }
@@ -42,6 +47,10 @@ body.guide-three .next-actions .next-button {
   body.guide-three .hero h1 {
     font-size: clamp(21px, 5.8vw, 28px);
     line-height: 1.55;
+  }
+
+  body.guide-three .hero-title-rest span {
+    display: block;
   }
 
   body.guide-three .next-actions {
