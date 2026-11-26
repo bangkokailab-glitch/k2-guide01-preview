@@ -379,3 +379,26 @@ body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio:
   body.heading-i.layout-study .article .statement-rule { padding: 20px; }
   body.heading-i.layout-study .article .closing-line { margin-top: 26px; padding-top: 19px; }
 }
+
+/* Give the five chapter headings one editorial measure; leave CASE headings unchanged. */
+body.heading-i.layout-a .article .chapter h2 {
+  width: min(100%, clamp(320px, 56%, 500px));
+}
+body.heading-i.layout-a .article .chapter-one h2 {
+  padding-inline: 16px;
+}
+body.heading-i.layout-a .article .chapter h2::before {
+  right: 8px;
+  width: 240px;
+  opacity: .11;
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-a .article .chapter h2 { width: min(100%, 320px); }
+  body.heading-i.layout-a .article .chapter-one h2 { padding-inline: 10px; }
+  body.heading-i.layout-a .article .chapter h2::before {
+    right: 4px;
+    width: 150px;
+    opacity: .11;
+  }
+}
