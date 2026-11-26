@@ -108,7 +108,12 @@ body.heading-i.layout-study .article .photo::before {
 }
 
 /* A: a broad opening plate and alternating case photography. */
-body.heading-i.layout-a .article { --guide-photo-ratio: 2.45; }
+body.heading-i.layout-a .article {
+  --guide-photo-ratio: 2.45;
+  width: 100%;
+  padding-inline: max(76px, calc((100% - 896px) / 2));
+  box-shadow: none;
+}
 body.heading-i.layout-a .article .opening-grid { display: block; }
 body.heading-i.layout-a .article .opening-photo {
   width: 100%;
@@ -277,7 +282,10 @@ body.heading-i.layout-c .article .case-three .case-photo { grid-column: 1; grid-
 body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio: 2.2; }
 
 @media (max-width: 900px) {
-  body.heading-i.layout-a .article { --guide-photo-ratio: 1.65; }
+  body.heading-i.layout-a .article {
+    --guide-photo-ratio: 1.65;
+    padding-inline: 64px;
+  }
   body.heading-i.layout-a .article .visual-plan { min-height: 180px; }
   body.heading-i.layout-study .article .chapter { padding: 47px 0 52px; }
   body.heading-i.layout-study .article .chapter-one { padding-top: 40px; }
@@ -332,6 +340,7 @@ body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio:
 }
 
 @media (max-width: 620px) {
+  body.heading-i.layout-a .article { padding-inline: 36px; }
   body.heading-i.layout-study.layout-a .article p { font-size: 16px; }
   body.heading-i.layout-a .article .visual-plan {
     min-height: 165px;
