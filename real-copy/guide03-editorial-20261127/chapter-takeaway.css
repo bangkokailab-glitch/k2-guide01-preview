@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* One chapter-end takeaway per major section across all three Guides. */
+/* A consistent takeaway treatment for major sections; case-study chapters use their own layout. */
 body.heading-i.layout-study.layout-a .article .chapter > .chapter-takeaway {
   display: block;
   width: 100%;
@@ -8,9 +8,9 @@ body.heading-i.layout-study.layout-a .article .chapter > .chapter-takeaway {
   box-sizing: border-box;
   margin: 30px 0 0;
   padding: 26px 30px;
-  border: 1px solid rgba(158, 122, 70, .72);
+  border: 1px solid rgba(158, 122, 70, .88);
   border-radius: 0;
-  background: rgba(225, 209, 181, .32);
+  background: rgba(225, 209, 181, .40);
   box-shadow: none;
   text-align: left;
 }
