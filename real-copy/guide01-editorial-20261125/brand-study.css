@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+/* Three brand/LP studies. The original article copy, photography layout and hero remain intact. */
+body.heading-i.layout-study.layout-a.brand-study {
+  --brand-gold: #a57936;
+  --brand-gold-light: #dec391;
+  --brand-ink: #211a14;
+}
+
+body.heading-i.layout-study.layout-a.brand-study .article .chapter h2 {
+  display: block;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--brand-ink);
+  font-size: clamp(27px, 2vw, 30px);
+  line-height: 1.55;
+  letter-spacing: .025em;
+  text-wrap: balance;
+}
+body.heading-i.layout-study.layout-a.brand-study .article .chapter h2::before,
+body.heading-i.layout-study.layout-a.brand-study .article .chapter h2::after {
+  content: none;
+  display: none;
+}
+body.heading-i.layout-study.layout-a.brand-study .article .chapter > .chapter-takeaway {
+  position: relative;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0 0;
+  padding: 27px 32px;
+  border-radius: 0;
+  text-align: left;
+}
+body.heading-i.layout-study.layout-a.brand-study .article .chapter > .chapter-takeaway p {
+  margin: 0;
+  color: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 2.05;
+  letter-spacing: .005em;
+}
+body.heading-i.layout-study.layout-a.brand-study .article .case > .case-index {
+  box-sizing: border-box;
+  font-family: Georgia, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: .13em;
+  white-space: nowrap;
+}
+
+/* A: central chapter signature, champagne statement, floating monogram plate. */
+body.heading-i.layout-study.layout-a.brand-study--a .article .chapter h2 {
+  padding: 16px 8px 7px !important;
+  text-align: center;
+}
+body.heading-i.layout-study.layout-a.brand-study--a .article .chapter h2::before {
+  content: "" !important;
+  display: block !important;
+  position: static !important;
+  width: 96px !important;
+  height: 2px !important;
+  margin: 0 auto 18px !important;
+  transform: none !important;
+  background: linear-gradient(90deg, transparent, #a57936 22%, #eed5a2 50%, #a57936 78%, transparent) !important;
+  box-shadow: 0 1px 7px rgba(176, 132, 61, .25);
+  filter: none !important;
+  opacity: 1 !important;
+}
+body.heading-i.layout-study.layout-a.brand-study--a .article .chapter > .chapter-takeaway {
+  border: 1px solid #ad843f;
+  border-top: 3px solid #b5873d;
+  background: linear-gradient(110deg, #ead8bb, #f6eddc 46%, #efe0c7);
+  box-shadow: 0 12px 28px rgba(60, 42, 20, .075);
+  color: #2b2118;
+}
+body.heading-i.layout-study.layout-a.brand-study--a .article .chapter-three .case { padding-top: 42px; }
+body.heading-i.layout-study.layout-a.brand-study--a .article .case > .case-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 178px;
+  height: 48px;
+  padding: 5px 13px 5px 7px;
+  border: 1px solid #c19a5c;
+  background: linear-gradient(105deg, #17120e, #32251a 68%, #5d4023);
+  color: #fff9ed;
+  box-shadow: 0 6px 16px rgba(29, 19, 9, .22), inset 0 2px 0 rgba(244, 213, 156, .45);
+}
+body.heading-i.layout-study.layout-a.brand-study--a .article .case > .case-index::before {
+  content: "";
+  display: block;
+  flex: 0 0 39px;
+  width: 39px;
+  height: 34px;
+  background: url("assets/header-logo.svg") left center / 195px auto no-repeat;
+  opacity: .8;
+}
+body.heading-i.layout-study.layout-a.brand-study--a .article .case > .case-index::after { display: none; }
+
+/* B: broad gilt section band, a gold rail, and an integrated case banner. */
+body.heading-i.layout-study.layout-a.brand-study--b .article .chapter h2 {
+  padding: 18px 24px 19px;
+  border-left: 4px solid #946727;
+  background: linear-gradient(103deg, #dec69c, #efe2c8 48%, #f5ebdb);
+  box-shadow: inset 0 -1px 0 rgba(148, 103, 39, .62);
+  text-align: left;
+}
+body.heading-i.layout-study.layout-a.brand-study--b .article .chapter > .chapter-takeaway {
+  border: 0;
+  border-left: 5px solid #a57936;
+  background: linear-gradient(90deg, #e7d7bc, #f4ead8 42%, #f1e5d0);
+  box-shadow: inset 0 -1px 0 rgba(159, 121, 62, .55);
+  color: #2b2118;
+}
+body.heading-i.layout-study.layout-a.brand-study--b .article .chapter-three .case { padding-top: 73px; }
+body.heading-i.layout-study.layout-a.brand-study--b .article .case > .case-index {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: 51px;
+  padding: 0 28px;
+  transform: none;
+  border: 1px solid #ad843f;
+  border-bottom: 2px solid #c39955;
+  background: linear-gradient(90deg, #17120e, #332519 70%, #74502b);
+  color: #fff9ed;
+  box-shadow: inset 0 1px 0 rgba(236, 207, 148, .5);
+}
+body.heading-i.layout-study.layout-a.brand-study--b .article .case > .case-index::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 37px;
+  margin-left: auto;
+  background: url("assets/header-logo.svg") left center / 210px auto no-repeat;
+  opacity: .55;
+}
+
+/* C: private-office chapter doors, dark statements, inset bookplate. */
+body.heading-i.layout-study.layout-a.brand-study--c .article .chapter h2 {
+  padding: 25px 20px 27px;
+  border-top: 2px solid #b98d49;
+  border-bottom: 2px solid #b98d49;
+  background: linear-gradient(112deg, #17120f, #312318 62%, #17120f);
+  box-shadow: inset 0 1px 0 rgba(246, 223, 171, .28), 0 10px 22px rgba(43, 27, 13, .13);
+  color: #fff5e4 !important;
+  text-align: center;
+}
+body.heading-i.layout-study.layout-a.brand-study--c .article .chapter > .chapter-takeaway {
+  border: 1px solid #ad843f;
+  background: linear-gradient(118deg, #201914, #3a2b1c 68%, #251b14);
+  box-shadow: inset 0 3px 0 #d6b370, 0 12px 28px rgba(40, 23, 11, .13);
+  color: #f7eddd;
+}
+body.heading-i.layout-study.layout-a.brand-study--c .article .chapter-three .case { padding-top: 91px; }
+body.heading-i.layout-study.layout-a.brand-study--c .article .case > .case-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 21px;
+  left: -12px;
+  width: 160px;
+  height: 54px;
+  padding: 0 15px;
+  transform: none;
+  border: 1px solid #c29a5a;
+  border-left: 6px solid #d2aa64;
+  background: linear-gradient(92deg, #17120e, #39291a 75%, #684626);
+  color: #fff9ed;
+  box-shadow: 5px 7px 16px rgba(39, 23, 10, .18);
+}
+body.heading-i.layout-study.layout-a.brand-study--c .article .case > .case-index::after { display: none; }
+
+@media (max-width: 620px) {
+  body.heading-i.layout-study.layout-a.brand-study .article .chapter h2 { font-size: 23px; }
+  body.heading-i.layout-study.layout-a.brand-study .article .chapter > .chapter-takeaway {
+    margin-top: 25px;
+    padding: 20px 21px;
+  }
+  body.heading-i.layout-study.layout-a.brand-study .article .chapter > .chapter-takeaway p {
+    font-size: 16px;
+    line-height: 2;
+  }
+  body.heading-i.layout-study.layout-a.brand-study .article .case > .case-index { font-size: 15px; }
+  body.heading-i.layout-study.layout-a.brand-study--a .article .chapter h2 { padding: 13px 4px 6px !important; }
+  body.heading-i.layout-study.layout-a.brand-study--a .article .chapter h2::before { width: 72px !important; margin-bottom: 13px !important; }
+  body.heading-i.layout-study.layout-a.brand-study--a .article .chapter-three .case { padding-top: 32px; }
+  body.heading-i.layout-study.layout-a.brand-study--a .article .case > .case-index { left: 16px; width: 160px; height: 44px; }
+  body.heading-i.layout-study.layout-a.brand-study--a .article .case > .case-index::before {
+    flex-basis: 32px;
+    width: 32px;
+    height: 28px;
+    background-size: 166px auto;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--b .article .chapter h2 { padding: 14px 16px 15px; }
+  body.heading-i.layout-study.layout-a.brand-study--b .article .chapter-three .case { padding-top: 67px; }
+  body.heading-i.layout-study.layout-a.brand-study--b .article .case > .case-index { padding: 0 18px; }
+  body.heading-i.layout-study.layout-a.brand-study--c .article .chapter h2 { padding: 19px 12px 20px; }
+  body.heading-i.layout-study.layout-a.brand-study--c .article .chapter-three .case { padding-top: 77px; }
+  body.heading-i.layout-study.layout-a.brand-study--c .article .case > .case-index { left: -1px; width: 146px; height: 47px; }
+}
