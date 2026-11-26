@@ -17,15 +17,18 @@ body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading-
   display: none !important;
 }
 
-/* Move the whole first view up while keeping the hero image's height and crop. */
+/* Reveal the first chapter title on a typical desktop viewport without changing the hero image. */
 @media (min-width: 901px) {
   body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .site-header {
-    height: 136px;
+    height: 118px;
   }
   body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .header-inner {
-    gap: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    gap: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter-one {
+    padding-top: 20px;
   }
 }
 

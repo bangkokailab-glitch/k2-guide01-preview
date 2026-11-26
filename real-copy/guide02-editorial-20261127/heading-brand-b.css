@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* B — the approved monogram interrupts a pair of quiet gold hairlines. */
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter h2 {
+  font-size: clamp(28px, 2.55vw, 40px) !important;
+  background: linear-gradient(90deg, transparent, #af8c57 18%, #b99b68 50%, #af8c57 82%, transparent) center 20px / 220px 1px no-repeat !important;
+}
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter h2::before {
+  width: 61px !important;
+  height: 40px !important;
+  margin-bottom: 9px !important;
+  background: #f3ecdf url("assets/header-logo.svg") 8px center / 230px auto no-repeat !important;
+  opacity: 1 !important;
+}
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Reveal the first chapter title on a typical desktop viewport without changing the hero image. */
+@media (min-width: 901px) {
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .site-header {
+    height: 118px;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .header-inner {
+    gap: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter-one {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter h2 {
+    font-size: 29px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter h2 {
+    font-size: clamp(20px, 5.5vw, 27px) !important;
+    background-size: 164px 1px !important;
+    background-position: center 17px !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--b .article .chapter h2::before {
+    width: 53px !important;
+    height: 34px !important;
+    margin-bottom: 8px !important;
+    background-size: 190px auto !important;
+  }
+}

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* Centered K2 chapter signature. Keep the selected A takeaway and CASE treatments. */
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading .article .chapter h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #241d17 !important;
+  font-size: clamp(27px, 2vw, 30px) !important;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .055em !important;
+  text-align: center !important;
+}
+
+/* Use the approved emblem from the left side of the existing full lockup. */
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading .article .chapter h2::before {
+  content: "" !important;
+  display: block !important;
+  position: static !important;
+  flex: 0 0 auto;
+  width: 45px !important;
+  height: 40px !important;
+  margin: 0 auto 9px !important;
+  background: url("assets/header-logo.svg") left center / 230px auto no-repeat !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: .86 !important;
+  transform: none !important;
+  pointer-events: none;
+}
+
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading .article .chapter h2::after {
+  content: "" !important;
+  display: block !important;
+  position: static !important;
+  flex: 0 0 auto;
+  width: 92px !important;
+  height: 1px !important;
+  margin: 15px auto 0 !important;
+  border: 0 !important;
+  background: linear-gradient(90deg, transparent, #aa864d 18%, #c4a66f 50%, #aa864d 82%, transparent) !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading .article .chapter h2 {
+    font-size: 23px !important;
+    letter-spacing: .035em !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading .article .chapter h2::before {
+    width: 37px !important;
+    height: 33px !important;
+    margin-bottom: 8px !important;
+    background-size: 190px auto !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading .article .chapter h2::after {
+    width: 76px !important;
+    margin-top: 12px !important;
+  }
+}
