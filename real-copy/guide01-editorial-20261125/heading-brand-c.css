@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* C — a small K2 chapter seal and a title-width inscription line. */
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--c .article .chapter h2::before {
+  width: 54px !important;
+  height: 54px !important;
+  margin-bottom: 10px !important;
+  border: 1px solid #b1915d !important;
+  background: #f7f0e5 url("assets/header-logo.svg") 10px center / 185px auto no-repeat !important;
+  opacity: 1 !important;
+}
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--c .article .chapter h2 > span {
+  display: block;
+  width: min(100%, 340px);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b1915d;
+  text-align: center;
+}
+body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--c .article .chapter h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+@media (max-width: 620px) {
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--c .article .chapter h2::before {
+    width: 46px !important;
+    height: 46px !important;
+    margin-bottom: 8px !important;
+    background-position: 8px center !important;
+    background-size: 160px auto !important;
+  }
+  body.heading-i.layout-study.layout-a.brand-study--a.brand-heading.brand-heading--c .article .chapter h2 > span {
+    width: min(100%, 300px);
+    padding-bottom: 8px;
+  }
+}
