@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Finished editorial photography keeps the established outer frame sizes. */
+body.heading-i.layout-study.layout-a .article .photo-board--trio.photo-board--filled {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr);
+}
+
+body.heading-i.layout-study.layout-a .article .photo-board--filled .photo-cut--lead {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+body.heading-i.layout-study.layout-a .article .photo-board--filled .photo-cut {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 0;
+  background: none;
+}
+
+body.heading-i.layout-study.layout-a .article .photo-board--filled .photo-cut:nth-of-type(n) {
+  background: none;
+}
+
+body.heading-i.layout-study.layout-a .article .photo-board--filled .photo-cut img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+body.heading-i.layout-study.layout-a .article .photo-board--filled .photo-cut::after,
+body.heading-i.layout-study.layout-a .article .editorial-photo--filled::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(21, 13, 8, .06);
+  pointer-events: none;
+}
+
+body.heading-i.layout-study.layout-a .article .editorial-photo--filled {
+  position: relative;
+  aspect-ratio: var(--guide-photo-ratio);
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid #b7afa3;
+}
+
+body.heading-i.layout-study.layout-a .article .editorial-photo--filled::before {
+  display: none;
+}
+
+body.heading-i.layout-study.layout-a .article .editorial-photo--filled img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}

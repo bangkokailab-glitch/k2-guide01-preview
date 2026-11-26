@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Guide 3 photographs keep the existing frame ratios and the chapter 2 6:4 split. */
+body.guide-three.heading-i.layout-study.layout-a .article .photo.photo-filled::before {
+  display: none;
+}
+
+body.guide-three.heading-i.layout-study.layout-a .article .photo.photo-filled > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--guide-photo-ratio);
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(145, 112, 72, .55);
+  box-sizing: border-box;
+}
+
+body.guide-three.heading-i.layout-study.layout-a .article .photo-board--trio.photo-filled {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr);
+}
+
+body.guide-three.heading-i.layout-study.layout-a .article .photo-board--trio.photo-filled .photo-cut--lead {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+body.guide-three.heading-i.layout-study.layout-a .article .photo-board.photo-filled .photo-cut {
+  position: relative;
+  display: block;
+  padding: 0;
+  background: #211914;
+}
+
+body.guide-three.heading-i.layout-study.layout-a .article .photo-board.photo-filled .photo-cut img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.guide-three.heading-i.layout-study.layout-a .article .photo-board.photo-filled .photo-cut::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(25, 17, 11, .07);
+  pointer-events: none;
+}
+
+body.guide-three .chapter-one .photo-board--trio.photo-filled .photo-cut:nth-child(1) img { object-position: 44% center; }
+body.guide-three .chapter-one .photo-board--trio.photo-filled .photo-cut:nth-child(2) img { object-position: center; }
+body.guide-three .chapter-one .photo-board--trio.photo-filled .photo-cut:nth-child(3) img { object-position: 51% center; }
+body.guide-three .chapter-two .photo-board--duo.photo-filled .photo-cut:first-child img { object-position: 46% center; }
+body.guide-three .chapter-two .photo-board--duo.photo-filled .photo-cut:last-child img { object-position: 50% center; }
+body.guide-three .chapter-three .editorial-photo.photo-filled > img { object-position: center 48%; }
+body.guide-three .chapter-five .editorial-photo.photo-filled > img { object-position: center 49%; }
