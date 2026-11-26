@@ -1,23 +1,30 @@
 @charset "UTF-8";
 
-/* Matched Guide illustrations. Existing HTML diagrams remain the tablet/mobile version. */
+/* The desktop diagrams share one visual language. The original HTML remains for tablet/mobile. */
 @media (min-width: 901px) {
   body.heading-i.layout-a .article .visual-plan--funds,
   body.guide-two.heading-i.layout-a .article .visual-plan--choice-flow,
   body.guide-three.heading-i.layout-a .article .visual-plan--steps {
     position: relative;
     display: block;
-    height: 237px;
-    min-height: 237px;
+    height: 280px;
+    min-height: 280px;
     box-sizing: border-box;
     overflow: hidden;
     padding: 0;
     border: 0;
-    background-color: #f4eee4;
-    background-image: url("assets/guide-diagram-pc.png");
-    background-position: center;
+    background-color: transparent;
+    background-image: url("assets/guide-diagram-circles-pc.png"), linear-gradient(#b39462, #b39462);
+    background-position: center, center;
     background-repeat: no-repeat;
-    background-size: cover;
+  }
+
+  body.heading-i.layout-a .article .visual-plan--funds {
+    background-size: 100% auto, 70% 2px;
+  }
+  body.guide-two.heading-i.layout-a .article .visual-plan--choice-flow,
+  body.guide-three.heading-i.layout-a .article .visual-plan--steps {
+    background-size: 80% auto, 60% 2px;
   }
 
   body.heading-i.layout-a .article .visual-plan--funds figcaption,
@@ -32,10 +39,11 @@
     white-space: nowrap;
   }
 
+  /* Names sit below the artwork, leaving the icon centered and large inside each circle. */
   body.heading-i.layout-a .article .visual-plan--funds .funds-grid {
     position: absolute;
     right: 0;
-    bottom: 8px;
+    bottom: 7px;
     left: 0;
     width: 100%;
     gap: 0;
@@ -51,7 +59,7 @@
 
   body.guide-two.heading-i.layout-a .article .visual-plan--choice-flow .choice-flow {
     position: absolute;
-    bottom: 8px;
+    bottom: 7px;
     left: 50%;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -64,6 +72,7 @@
     border: 0;
     border-radius: 0;
     background: transparent;
+    color: #2e2820;
     font-size: 17px;
   }
   body.guide-two.heading-i.layout-a .article .visual-plan--choice-flow .choice-flow__arrow {
@@ -73,38 +82,28 @@
   body.guide-three.heading-i.layout-a .article .visual-plan--steps {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: end;
+    align-items: stretch;
     gap: 0;
-    padding: 0 8% 7px;
+    padding: 0 12.5%;
   }
   body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step {
-    min-height: 50px;
-    padding: 0;
+    position: relative;
+    min-height: 0;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 0;
+    padding: 0 0 7px;
     border: 0;
     background: transparent;
-    justify-content: end;
-    gap: 2px;
   }
+  /* Keep the established branded STEP plaque from guide03.css. */
   body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__badge {
-    position: static;
-    width: auto;
-    height: auto;
-    padding: 0;
-    transform: none;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-    color: #8f7049;
-    font-size: 11px;
-    line-height: 1.2;
-  }
-  body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__badge::before {
-    display: none;
+    top: 18px;
   }
   body.guide-three.heading-i.layout-a .article .visual-plan--steps .visual-step__title {
     color: #2e2820;
-    font-size: 15px;
-    line-height: 1.3;
+    font-size: 17px;
+    line-height: 1.45;
     white-space: nowrap;
   }
 }
