@@ -38,7 +38,7 @@ body.guide-three.heading-i.layout-a .article .guide-visual figcaption {
 body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--domains {
   height: 600px;
   color: #f3eadc;
-  background: linear-gradient(rgba(12, 8, 5, .48), rgba(12, 8, 5, .55)), url("assets/guide-office-background.webp") center / cover;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("assets/guide-office-background.webp") center / cover;
 }
 .guide-visual--domains::before {
   content: "";
@@ -177,7 +177,7 @@ body.guide-three.heading-i.layout-a .article .guide-timing__answer span {
 body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions {
   padding: 42px 5% 52px;
   color: #f3eadc;
-  background: linear-gradient(rgba(13, 10, 8, .55), rgba(13, 10, 8, .62)), url("assets/study.jpg") center 54% / cover;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("assets/study.jpg") center 54% / cover;
 }
 .guide-questions__intro { margin: 0 0 52px; color: #d5c2a5; font-size: 20px; line-height: 1.7; letter-spacing: .12em; text-align: center; }
 .guide-questions__steps {

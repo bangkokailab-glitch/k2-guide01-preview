@@ -8,7 +8,7 @@ body.heading-i.layout-a .article .visual-plan.visual-plan--lp {
   padding: 30px 34px;
   border: 1px solid rgba(214, 190, 155, .58);
   background:
-    linear-gradient(rgba(17, 12, 9, .52), rgba(17, 12, 9, .52)),
+    linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
     url("assets/guide-office-background.webp") center / cover;
   color: #f3eee5;
   box-shadow: none;
@@ -26,7 +26,7 @@ body.heading-i.layout-a .article .visual-plan.visual-plan--lp.visual-plan--advic
 
 body.heading-i.layout-a .article .visual-plan.visual-plan--lp.visual-plan--funds {
   background:
-    linear-gradient(rgba(20, 14, 10, .52), rgba(20, 14, 10, .52)),
+    linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)),
     url("assets/hero-leather.jpg") 50% 50% / cover;
 }
 
