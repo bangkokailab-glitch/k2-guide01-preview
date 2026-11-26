@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Keep the Guide label independent of title line count. */
+body.heading-i.layout-a .hero {
+  position: relative;
+  display: block;
+  height: clamp(415px, calc(100svh - 305px), 565px);
+  min-height: 0;
+  padding: 0;
+}
+body.heading-i.layout-a .hero-inner,
+body.heading-i.layout-a .hero-copy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  padding: 0;
+  border: 0;
+  transform: none;
+}
+body.heading-i.layout-a .hero-eyebrow {
+  position: absolute;
+  top: clamp(75px, calc(40% - 91px), 135px);
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+body.heading-i.layout-a .hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(950px, calc(100% - 48px));
+  margin: 0;
+  transform: translate(-50%, -50%);
+  white-space: normal;
+}
+body.heading-i.layout-a .hero-title-line { display: block; }
+
+@media (min-width: 621px) and (max-width: 900px) {
+  body.heading-i.layout-a .hero { height: clamp(365px, calc(100svh - 360px), 480px); }
+  body.heading-i.layout-a .hero-eyebrow { top: clamp(69px, calc(40% - 91px), 101px); }
+}
+@media (max-width: 620px) {
+  body.heading-i.layout-a .hero { height: 360px; }
+  body.heading-i.layout-a .hero-eyebrow { top: 81px; }
+  body.heading-i.layout-a .hero h1 { top: 49%; width: calc(100% - 28px); }
+}
