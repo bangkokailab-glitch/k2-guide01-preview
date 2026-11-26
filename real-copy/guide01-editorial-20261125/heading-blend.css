@@ -73,6 +73,10 @@
   margin: 0;
 }
 
+@media (min-width: 901px) {
+  .heading-i .hero { height: clamp(260px, calc(100svh - 445px), 455px); }
+}
+
 @media (max-width: 620px) {
   .heading-i .perspective-intro img { transform: translateX(-50%) scale(.85); }
   .heading-i .closing-line p { font-size: 16px; line-height: 2; letter-spacing: .005em; }
