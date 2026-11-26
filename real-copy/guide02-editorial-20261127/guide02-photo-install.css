@@ -19,10 +19,11 @@ body.heading-i.layout-study.layout-a .article .photo:not(.photo-board) > img {
   height: auto;
   aspect-ratio: var(--guide-photo-ratio);
   object-fit: cover;
-  filter: saturate(.86) contrast(.97);
+  filter: saturate(.94) contrast(1.01);
 }
 
-body.heading-i.layout-study.layout-a .article .case-one .case-photo:not(.photo-board) > img {
+body.heading-i.layout-study.layout-a .article .case-one .case-photo:not(.photo-board) > img,
+body.heading-i.layout-study.layout-a .article .case-two .case-photo:not(.photo-board) > img {
   aspect-ratio: var(--guide-case-photo-ratio);
   object-position: center 54%;
 }
@@ -34,7 +35,7 @@ body.heading-i.layout-study.layout-a .article .photo-board .photo-cut::after {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: rgba(24, 18, 13, .09);
+  background: rgba(24, 18, 13, .03);
 }
 
 body.heading-i.layout-study.layout-a .article .photo-board .photo-cut {
@@ -49,7 +50,7 @@ body.heading-i.layout-study.layout-a .article .photo-board .photo-cut > img {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: saturate(.86) contrast(.97);
+  filter: saturate(.94) contrast(1.01);
 }
 
 body.heading-i.layout-study.layout-a .article .photo-board--trio-right {
@@ -63,7 +64,7 @@ body.heading-i.layout-study.layout-a .article .photo-board--trio-right .photo-cu
 }
 
 body.heading-i.layout-study.layout-a .article .photo-board--trio-right .photo-cut::after {
-  background: rgba(24, 18, 13, .12);
+  background: rgba(24, 18, 13, .04);
 }
 
 @media (max-width: 620px) {

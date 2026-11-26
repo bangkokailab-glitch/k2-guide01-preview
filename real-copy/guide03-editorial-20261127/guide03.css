@@ -2,7 +2,7 @@
 
 /* Guide 3 keeps Guide 1's page system while giving the cover its own subject. */
 body.guide-three::before {
-  background-image: linear-gradient(180deg, rgba(12, 7, 4, .34), rgba(12, 7, 4, .43)), url("assets/guide03-hero.jpg");
+  background-image: linear-gradient(180deg, rgba(12, 7, 4, .58), rgba(12, 7, 4, .64)), url("assets/guide03-hero-v2.jpg");
   background-position: center center;
 }
 
@@ -49,6 +49,14 @@ body.guide-three .next-actions .next-button {
 }
 
 @media (max-width: 620px) {
+  body.guide-three::before {
+    background-position: 76% center;
+  }
+
+  body.guide-three .hero {
+    background: linear-gradient(180deg, rgba(12, 7, 4, .45), rgba(12, 7, 4, .58)), url("assets/guide03-hero-v2.jpg") 72% center / cover no-repeat;
+  }
+
   body.guide-three .hero h1 {
     font-size: clamp(21px, 5.8vw, 28px);
     line-height: 1.55;

@@ -2,8 +2,12 @@
 
 /* Guide 2 keeps the Guide 1 editorial grid; only the cover image and its title adapt. */
 body.guide-two::before {
-  background-image: linear-gradient(180deg, rgba(13, 8, 5, .27), rgba(13, 8, 5, .40)), url("assets/guide02-hero.jpg");
+  background-image: linear-gradient(180deg, rgba(13, 8, 5, .36), rgba(13, 8, 5, .46)), url("assets/guide02-hero-v2.jpg");
   background-position: center center;
+}
+
+body.guide-two .hero {
+  background: linear-gradient(90deg, rgba(13, 8, 5, .24), rgba(13, 8, 5, .17) 60%, rgba(13, 8, 5, .12));
 }
 
 body.guide-two .hero h1 {
@@ -22,6 +26,9 @@ body.guide-two .article .chapter-three .case-heading h3 { margin-bottom: 17px; }
 
 @media (max-width: 620px) {
   body.guide-two::before { background-position: 77% center; }
+  body.guide-two .hero {
+    background: linear-gradient(180deg, rgba(13, 8, 5, .40), rgba(13, 8, 5, .50)), url("assets/guide02-hero-v2.jpg") 18% center / cover no-repeat;
+  }
   body.guide-two .hero h1 {
     max-width: 340px;
     font-size: clamp(23px, 6vw, 29px);
