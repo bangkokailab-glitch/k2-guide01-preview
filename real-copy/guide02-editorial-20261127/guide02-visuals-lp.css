@@ -52,35 +52,46 @@ body.guide-two .article .g2-path__body {
 
 body.guide-two .article .g2-diagram__title {
   position: relative;
-  margin: 0 0 13px;
-  padding-left: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 690px;
+  margin: 8px auto 15px;
   color: var(--diagram-ink);
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: .045em;
+  text-align: center;
 }
 
 body.guide-two .article .g2-diagram__title::before {
   content: "";
   position: absolute;
-  top: .7em;
-  left: 0;
-  width: 15px;
+  top: -11px;
+  left: 50%;
+  width: 32px;
   height: 1px;
   background: var(--diagram-gold);
+  transform: translateX(-50%);
 }
 
 body.guide-two .article .g2-mobile-break { display: none; }
 
-body.guide-two .article .g2-premise__routes { border-top: 1px solid var(--diagram-rule); }
+body.guide-two .article .g2-premise__routes {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  border-top: 1px solid var(--diagram-rule);
+}
 
 body.guide-two .article .g2-premise__route {
   display: grid;
-  grid-template-columns: 32% 42px minmax(0, 1fr);
-  min-height: 74px;
+  grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr);
+  min-height: 77px;
   align-items: center;
-  gap: 4px;
+  gap: 12px;
+  padding: 0 34px;
   border-bottom: 1px solid var(--diagram-rule);
 }
 
@@ -95,11 +106,14 @@ body.guide-two .article .g2-premise__alternatives {
 
 body.guide-two .article .g2-premise__alternatives > div + div { margin-top: 3px; }
 
+body.guide-two .article .g2-premise__from { text-align: right; }
+
 body.guide-two .article .g2-diagram__arrow {
   position: relative;
   display: block;
   width: 25px;
   height: 1px;
+  margin: 0 auto;
   background: var(--diagram-gold);
 }
 
@@ -116,18 +130,25 @@ body.guide-two .article .g2-diagram__arrow::after {
 }
 
 body.guide-two .article .g2-premise__conclusion {
-  margin-top: 13px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 680px;
+  margin: 16px auto 0;
   color: var(--diagram-ink);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.45;
   letter-spacing: .025em;
-  text-align: right;
+  text-align: center;
 }
 
 /* A linear reading path ends in three equal options. None is the default. */
 body.guide-two .article .g2-path__process {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr) 34px minmax(0, 1fr);
   align-items: stretch;
   border-top: 1px solid var(--diagram-rule);
   border-bottom: 1px solid var(--diagram-rule);
@@ -136,7 +157,8 @@ body.guide-two .article .g2-path__process {
 body.guide-two .article .g2-path__stage {
   position: relative;
   min-width: 0;
-  padding: 9px 6px 10px;
+  padding: 10px 4px 11px;
+  text-align: center;
 }
 
 body.guide-two .article .g2-path__stage:nth-child(1) { grid-column: 1; }
@@ -154,20 +176,22 @@ body.guide-two .article .g2-path__stage-detail {
   margin-top: 5px;
   color: rgba(243, 238, 229, .86);
   font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.45;
   letter-spacing: .02em;
 }
 
 body.guide-two .article .g2-path__stage:nth-child(-n+2)::after {
-  content: "";
+  content: "→";
   position: absolute;
   top: 50%;
-  right: -22px;
-  width: 15px;
-  height: 1px;
-  background: var(--diagram-gold);
+  right: -28px;
+  color: var(--diagram-gold);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 20px;
+  line-height: 1;
+  transform: translateY(-50%);
 }
 
 body.guide-two .article .g2-path__branch {
@@ -179,6 +203,10 @@ body.guide-two .article .g2-path__branch {
 
 body.guide-two .article .g2-path__outcomes {
   display: grid;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 690px;
+  margin: 0 auto;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   min-height: 43px;
   align-items: center;
@@ -231,9 +259,16 @@ body.guide-two .article .g2-diagram__sr-only {
   }
 
   body.guide-two .article .g2-diagram__title {
-    margin-bottom: 15px;
+    margin: 0 0 15px;
     padding-left: 22px;
     font-size: 21px;
+    text-align: left;
+  }
+  body.guide-two .article .g2-diagram__title::before {
+    top: .7em;
+    left: 0;
+    width: 15px;
+    transform: none;
   }
   body.guide-two .article .g2-mobile-break { display: initial; }
 
@@ -241,7 +276,9 @@ body.guide-two .article .g2-diagram__sr-only {
     grid-template-columns: minmax(0, 1fr) 26px minmax(0, 1fr);
     min-height: 82px;
     gap: 3px;
+    padding: 0;
   }
+  body.guide-two .article .g2-premise__from { text-align: left; }
 
   body.guide-two .article .g2-premise__from,
   body.guide-two .article .g2-premise__to,
@@ -251,7 +288,7 @@ body.guide-two .article .g2-diagram__sr-only {
   body.guide-two .article .g2-premise__conclusion { margin-top: 14px; font-size: 16px; text-align: left; }
 
   body.guide-two .article .g2-path__process { display: block; }
-  body.guide-two .article .g2-path__stage { min-height: 63px; padding: 9px 8px 9px 36px; }
+  body.guide-two .article .g2-path__stage { min-height: 63px; padding: 9px 8px 9px 36px; text-align: left; }
   body.guide-two .article .g2-path__stage + .g2-path__stage { border-top: 1px solid var(--diagram-rule); }
   body.guide-two .article .g2-path__stage::before {
     content: "";
