@@ -1,22 +1,30 @@
 @charset "UTF-8";
 
-/* Guide 3 diagrams follow the LP's thin matte-gold lines and restrained type. */
+/* Three diagrams share the same matte photographic surface and two PC sizes. */
 body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual {
-  display: block;
+  --diagram-photo: url("assets/guide-office-background.webp");
+  display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0;
   width: 100%;
   max-width: none;
   min-height: 0;
-  height: auto;
+  height: 320px;
   box-sizing: border-box;
   margin: 28px 0 32px;
-  padding: 0;
+  padding: 20px 42px;
   overflow: hidden;
   border: 0;
-  border-top: 1px solid #bca17b;
-  border-bottom: 1px solid #bca17b;
-  background: #f6efe4;
-  color: #2d241b;
+  border-top: 1px solid #d6be9b;
+  border-bottom: 1px solid #d6be9b;
+  background-color: #17130f;
+  background-image: linear-gradient(rgba(23, 19, 15, .75), rgba(23, 19, 15, .75)), var(--diagram-photo);
+  background-position: center;
+  background-size: cover;
+  color: #f3eee5;
   text-align: left;
   box-shadow: none;
   font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
@@ -34,207 +42,346 @@ body.guide-three.heading-i.layout-a .article .guide-visual figcaption {
   border: 0;
 }
 
-/* The six fields meet at one point of judgment, as in the LP's approach diagram. */
+/* Six fields converge on the family's decision. */
 body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--domains {
-  height: 600px;
-  color: #f3eadc;
-  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("assets/guide-office-background.webp") center / cover;
+  --diagram-photo: url("assets/guide-office-background.webp");
 }
-.guide-visual--domains::before {
-  content: "";
-  position: absolute;
-  inset: 27px;
-  border-left: 1px solid rgba(214, 190, 155, .23);
-  border-right: 1px solid rgba(214, 190, 155, .23);
-  pointer-events: none;
-}
-.guide-visual--domains .guide-visual__intro {
-  position: absolute;
-  z-index: 2;
-  top: 51px;
-  left: 0;
-  right: 0;
+body.guide-three.heading-i.layout-a .article .guide-visual--domains .guide-visual__intro {
   margin: 0;
-  color: #d5c2a5;
-  font-size: 17px;
-  line-height: 1.8;
-  letter-spacing: .14em;
+  color: #d6be9b;
+  font: 500 12px/1.5 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .12em;
   text-align: center;
 }
-.guide-domains__lines {
+.guide-domains__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 142px minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  width: min(100%, 760px);
+  margin: 12px auto 9px;
+}
+.guide-domains__group {
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(3, 42px);
+  min-width: 0;
+}
+.guide-domains__group:first-child::after,
+.guide-domains__group:last-child::before {
+  content: "";
   position: absolute;
-  z-index: 1;
-  inset: 0;
+  top: 50%;
+  width: 24px;
+  border-top: 1px solid rgba(214, 190, 155, .7);
+}
+.guide-domains__group:first-child::after { left: 100%; }
+.guide-domains__group:last-child::before { right: 100%; }
+body.guide-three.heading-i.layout-a .article .guide-domains__group span {
+  display: block;
   width: 100%;
-  height: 100%;
+  box-sizing: border-box;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(214, 190, 155, .48);
+  color: #f3eee5;
+  font: 400 19px/1.4 "Hiragino Mincho ProN", "Yu Mincho", serif;
+  letter-spacing: .08em;
+  text-align: center;
 }
-.guide-domains__lines path { fill: none; stroke: rgba(214, 190, 155, .56); stroke-width: 1; }
-.guide-domains__lines circle { fill: #d6be9b; opacity: .72; }
-.guide-domains__terms { position: absolute; z-index: 2; inset: 0; }
-body.guide-three.heading-i.layout-a .article .guide-domains__terms span {
-  position: absolute;
-  width: 155px;
-  color: #f3eadc;
-  font: 400 27px/1.5 "Hiragino Mincho ProN", "Yu Mincho", serif;
-  letter-spacing: .17em;
-}
-.guide-domains__terms span::after { content: ""; display: block; width: 34px; height: 1px; margin-top: 8px; background: #d6be9b; opacity: .7; }
-.guide-domains__terms span:nth-child(odd) { left: 9%; text-align: left; }
-.guide-domains__terms span:nth-child(even) { right: 8%; text-align: right; }
-.guide-domains__terms span:nth-child(even)::after { margin-left: auto; }
-.guide-domains__terms span:nth-child(-n+2) { top: 168px; }
-.guide-domains__terms span:nth-child(n+3):nth-child(-n+4) { top: 273px; }
-.guide-domains__terms span:nth-child(n+5) { top: 378px; }
 .guide-domains__center {
-  position: absolute;
-  z-index: 2;
-  top: 210px;
-  left: 50%;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 200px;
-  transform: translateX(-50%);
-  border: 1px solid rgba(214, 190, 155, .72);
+  width: 142px;
+  height: 142px;
+  box-sizing: border-box;
+  border: 1px solid #d6be9b;
   border-radius: 50%;
-  background: rgba(18, 12, 8, .3);
+  background: rgba(23, 19, 15, .35);
   text-align: center;
 }
 body.guide-three.heading-i.layout-a .article .guide-domains__center span {
-  color: #d5c2a5;
-  font: 500 15px/1.6 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
-  letter-spacing: .08em;
+  color: #d6be9b;
+  font: 500 11px/1.5 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .04em;
 }
-.guide-domains__center strong { font-size: 31px; font-weight: 400; line-height: 1.6; letter-spacing: .06em; }
-.guide-domains__conclusion {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  bottom: 44px;
-  left: 0;
+.guide-domains__center strong {
+  margin-top: 4px;
+  color: #f3eee5;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+body.guide-three.heading-i.layout-a .article .guide-visual--domains .guide-domains__conclusion {
   margin: 0;
-  font-size: 28px;
-  line-height: 1.6;
-  letter-spacing: .09em;
+  color: #f3eee5;
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: .06em;
   text-align: center;
 }
 .guide-domains__conclusion small {
   display: block;
-  margin-top: 2px;
-  color: #d5c2a5;
-  font: 500 15px/1.7 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
-  letter-spacing: .05em;
-}
-
-/* A decision and its timing are two independent axes, brought together below. */
-body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing { padding: 42px 5% 43px; }
-.guide-timing__columns { display: grid; grid-template-columns: minmax(0, 1fr) 58px minmax(0, 1fr); gap: 0; align-items: stretch; }
-.guide-timing__column { min-width: 0; padding: 0 6%; }
-.guide-timing__column h3 {
-  margin: 0 0 24px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #bca17b;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: .09em;
-  text-align: center;
-}
-.guide-timing__column ul { margin: 0; padding: 0; list-style: none; }
-.guide-timing__column li {
-  padding: 10px 4px;
-  border-bottom: 1px solid rgba(188, 161, 123, .36);
-  font-size: 19px;
-  line-height: 1.65;
+  margin-top: 3px;
+  color: #d6be9b;
+  font: 500 11px/1.5 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
   letter-spacing: .03em;
-  text-align: center;
 }
-body.guide-three.heading-i.layout-a .article .guide-timing__join {
-  align-self: center;
-  color: #a98e65;
-  font: 400 34px/1 "Hiragino Mincho ProN", serif;
-  text-align: center;
-}
-.guide-timing__answer {
-  width: min(760px, 90%);
-  margin: 40px auto 0;
-  padding-top: 26px;
-  border-top: 1px solid #bca17b;
-  text-align: center;
-}
-body.guide-three.heading-i.layout-a .article .guide-timing__answer span {
-  display: block;
-  margin-bottom: 7px;
-  color: #77644d;
-  font: 500 15px/1.7 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
-  letter-spacing: .08em;
-}
-.guide-timing__answer strong { font-size: 29px; font-weight: 400; line-height: 1.55; letter-spacing: .08em; }
 
-/* Three quiet chapters on one continuous line, without boxed STEP cards. */
-body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions {
-  padding: 42px 5% 52px;
-  color: #f3eadc;
-  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url("assets/study.jpg") center 54% / cover;
+/* The two kinds of decision fit on one concise spread. */
+body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing {
+  --diagram-photo: url("assets/planning.jpg");
+  padding: 23px 42px;
+  background-image: linear-gradient(rgba(23, 19, 15, .84), rgba(23, 19, 15, .84)), var(--diagram-photo);
 }
-.guide-questions__intro { margin: 0 0 52px; color: #d5c2a5; font-size: 20px; line-height: 1.7; letter-spacing: .12em; text-align: center; }
-.guide-questions__steps {
+.guide-timing__columns {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
+  grid-template-columns: minmax(0, 1fr) 42px minmax(0, 1fr);
+  align-items: center;
+  width: min(100%, 750px);
+  margin: 0 auto;
+}
+.guide-timing__column { min-width: 0; }
+.guide-timing__column h3 {
+  margin: 0 0 11px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgba(214, 190, 155, .78);
+  color: #f3eee5;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: .06em;
+  text-align: center;
+}
+.guide-timing__column ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 10px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.guide-questions__steps li { position: relative; min-width: 0; padding: 24px 7% 6px; border-top: 1px solid rgba(214, 190, 155, .64); text-align: center; }
-.guide-questions__steps li::before { content: ""; position: absolute; top: -4px; left: 50%; width: 7px; height: 7px; transform: translateX(-50%); border-radius: 50%; background: #d6be9b; }
+.guide-timing__column li {
+  min-width: 0;
+  padding: 7px 2px;
+  border-bottom: 1px solid rgba(214, 190, 155, .35);
+  color: #f3eee5;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: .01em;
+  text-align: center;
+  white-space: nowrap;
+}
+body.guide-three.heading-i.layout-a .article .guide-timing__join {
+  align-self: center;
+  color: #d6be9b;
+  font: 400 24px/1 "Hiragino Mincho ProN", "Yu Mincho", serif;
+  text-align: center;
+}
+.guide-timing__answer {
+  width: min(610px, 90%);
+  margin: 19px auto 0;
+  padding-top: 11px;
+  border-top: 1px solid rgba(214, 190, 155, .78);
+  text-align: center;
+}
+body.guide-three.heading-i.layout-a .article .guide-timing__answer span {
+  display: block;
+  margin-bottom: 3px;
+  color: #d6be9b;
+  font: 500 11px/1.5 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .05em;
+}
+.guide-timing__answer strong {
+  color: #f3eee5;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: .05em;
+}
+
+/* Compact three-step figure: the line carries the reading order. */
+body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions {
+  --diagram-photo: url("assets/study.jpg");
+  height: 260px;
+  padding: 18px 42px;
+}
+body.guide-three.heading-i.layout-a .article .guide-visual--questions .guide-questions__intro {
+  margin: 0 0 23px;
+  color: #f3eee5;
+  font-size: 22px;
+  line-height: 1.45;
+  letter-spacing: .06em;
+  text-align: center;
+}
+.guide-questions__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: min(100%, 780px);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.guide-questions__steps li {
+  position: relative;
+  min-width: 0;
+  padding: 15px 5% 0;
+  border-top: 1px solid rgba(214, 190, 155, .7);
+  text-align: center;
+}
+.guide-questions__steps li::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #d6be9b;
+}
 body.guide-three.heading-i.layout-a .article .guide-questions__number {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 7px;
   color: #d6be9b;
-  font: 400 15px/1.2 Georgia, serif;
-  letter-spacing: .14em;
+  font: 400 12px/1.3 Georgia, serif;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: .12em;
 }
-.guide-questions__steps strong { display: block; min-height: 81px; font-size: 25px; font-weight: 400; line-height: 1.6; letter-spacing: .04em; }
-.guide-questions__steps small { display: block; margin-top: 7px; color: #d5c2a5; font: 500 15px/1.75 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif; letter-spacing: .02em; }
+.guide-questions__steps strong {
+  display: block;
+  min-height: 58px;
+  color: #f3eee5;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: .02em;
+}
+.guide-questions__steps small {
+  display: block;
+  margin-top: 5px;
+  color: #d6be9b;
+  font: 500 11px/1.5 "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+  letter-spacing: .01em;
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual { padding-right: 27px; padding-left: 27px; }
+  .guide-domains__body { grid-template-columns: minmax(0, 1fr) 132px minmax(0, 1fr); gap: 14px; }
+  .guide-domains__group:first-child::after,
+  .guide-domains__group:last-child::before { width: 14px; }
+  .guide-domains__center { width: 132px; height: 132px; }
+  body.guide-three.heading-i.layout-a .article .guide-domains__group span { font-size: 17px; }
+  .guide-timing__columns { width: 100%; grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr); }
+  .guide-timing__column li { font-size: 16px; white-space: normal; }
+  .guide-questions__steps strong { font-size: 18px; }
+}
 
 @media (max-width: 700px) {
-  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual { margin: 20px 0 25px; }
-  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--domains { height: 690px; }
-  .guide-visual--domains::before { inset: 17px; }
-  .guide-visual--domains .guide-visual__intro { top: 27px; padding: 0 24px; font-size: 13px; }
-  .guide-domains__lines { display: none; }
-  .guide-domains__terms { display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: 66px; gap: 2px 14px; position: absolute; top: 102px; right: 9%; bottom: auto; left: 9%; }
-  body.guide-three.heading-i.layout-a .article .guide-domains__terms span { position: static; width: auto; font-size: 18px; letter-spacing: .1em; text-align: center; }
-  .guide-domains__terms span::after, .guide-domains__terms span:nth-child(even)::after { width: 26px; margin: 5px auto 0; }
-  .guide-domains__center { top: 355px; width: 210px; height: 158px; }
-  .guide-domains__center::before, .guide-domains__center::after { content: ""; position: absolute; left: 50%; width: 1px; background: rgba(214, 190, 155, .56); }
-  .guide-domains__center::before { bottom: 100%; height: 47px; }
-  .guide-domains__center::after { top: 100%; height: 42px; }
-  body.guide-three.heading-i.layout-a .article .guide-domains__center span { font-size: 12px; }
-  .guide-domains__center strong { font-size: 25px; }
-  .guide-domains__conclusion { bottom: 32px; font-size: 22px; }
-  .guide-domains__conclusion small { font-size: 12px; }
-  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing { padding: 29px 7% 34px; }
-  .guide-timing__columns { display: block; }
-  .guide-timing__column { padding: 0; }
-  .guide-timing__column h3 { margin-bottom: 10px; padding-bottom: 8px; font-size: 22px; }
-  .guide-timing__column ul { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9px; }
-  .guide-timing__column li { padding: 8px 0; font-size: 15px; line-height: 1.55; }
-  body.guide-three.heading-i.layout-a .article .guide-timing__join { display: block; margin: 9px 0 14px; font-size: 24px; }
-  .guide-timing__answer { width: 100%; margin-top: 24px; padding-top: 17px; }
-  body.guide-three.heading-i.layout-a .article .guide-timing__answer span { font-size: 12px; }
-  .guide-timing__answer strong { font-size: 23px; }
-  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions { padding: 30px 8% 40px; }
-  .guide-questions__intro { margin-bottom: 31px; font-size: 16px; }
-  .guide-questions__steps { display: block; }
-  .guide-questions__steps li { min-height: 115px; margin-left: 25px; padding: 0 0 23px 29px; border-top: 0; border-left: 1px solid rgba(214, 190, 155, .64); text-align: left; }
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual {
+    height: auto;
+    min-height: 0;
+    margin: 20px 0 25px;
+    padding: 24px 21px 27px;
+  }
+  body.guide-three.heading-i.layout-a .article .guide-visual--domains .guide-visual__intro { font-size: 11px; }
+  .guide-domains__body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px 14px;
+    margin: 15px auto 12px;
+  }
+  .guide-domains__group { grid-template-rows: repeat(3, 39px); }
+  .guide-domains__group:first-child::after,
+  .guide-domains__group:last-child::before { display: none; }
+  .guide-domains__group:first-child { grid-column: 1; grid-row: 1; }
+  .guide-domains__group:last-child { grid-column: 2; grid-row: 1; }
+  body.guide-three.heading-i.layout-a .article .guide-domains__group span {
+    padding: 7px 0;
+    font-size: 17px;
+  }
+  .guide-domains__center {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+    width: 125px;
+    height: 125px;
+  }
+  .guide-domains__center::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    height: 13px;
+    border-left: 1px solid rgba(214, 190, 155, .7);
+  }
+  .guide-domains__center strong { font-size: 20px; }
+  body.guide-three.heading-i.layout-a .article .guide-visual--domains .guide-domains__conclusion { font-size: 18px; }
+  .guide-domains__conclusion small { font-size: 11px; }
+
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--timing {
+    padding: 25px 21px 28px;
+  }
+  .guide-timing__columns { display: block; width: 100%; }
+  .guide-timing__column h3 {
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    font-size: 20px;
+  }
+  .guide-timing__column ul { gap: 0 8px; }
+  .guide-timing__column li {
+    padding: 7px 0;
+    font-size: 15px;
+    line-height: 1.45;
+    white-space: normal;
+  }
+  body.guide-three.heading-i.layout-a .article .guide-timing__join {
+    display: block;
+    margin: 8px 0 13px;
+    font-size: 21px;
+  }
+  .guide-timing__answer {
+    width: 100%;
+    margin-top: 19px;
+    padding-top: 12px;
+  }
+  .guide-timing__answer strong { font-size: 20px; }
+
+  body.guide-three.heading-i.layout-a .article .visual-plan.guide-visual--questions {
+    padding: 24px 24px 27px;
+  }
+  body.guide-three.heading-i.layout-a .article .guide-visual--questions .guide-questions__intro {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .guide-questions__steps { display: block; width: 100%; }
+  .guide-questions__steps li {
+    min-height: 91px;
+    margin-left: 18px;
+    padding: 0 0 18px 23px;
+    border-top: 0;
+    border-left: 1px solid rgba(214, 190, 155, .7);
+    text-align: left;
+  }
   .guide-questions__steps li:last-child { min-height: 0; padding-bottom: 0; }
-  .guide-questions__steps li::before { top: 6px; left: -4px; transform: none; }
-  body.guide-three.heading-i.layout-a .article .guide-questions__number { margin-bottom: 4px; font-size: 12px; }
-  .guide-questions__steps strong { min-height: 0; font-size: 20px; line-height: 1.45; }
+  .guide-questions__steps li::before {
+    top: 5px;
+    left: -4px;
+    transform: none;
+  }
+  body.guide-three.heading-i.layout-a .article .guide-questions__number {
+    margin-bottom: 3px;
+    font-size: 11px;
+  }
+  .guide-questions__steps strong {
+    min-height: 0;
+    font-size: 18px;
+    line-height: 1.4;
+  }
   .guide-questions__steps strong br { display: none; }
-  .guide-questions__steps small { margin-top: 5px; font-size: 12px; }
+  .guide-questions__steps small { margin-top: 4px; font-size: 11px; }
 }
