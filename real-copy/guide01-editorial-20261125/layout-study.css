@@ -381,6 +381,9 @@ body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio:
 }
 
 /* Give the five chapter headings one editorial measure; leave CASE headings unchanged. */
+body.heading-i.layout-a .perspective-intro img {
+  clip-path: inset(0 0 21% 0);
+}
 body.heading-i.layout-a .article .chapter h2 {
   width: min(100%, clamp(320px, 56%, 500px));
 }
@@ -388,19 +391,25 @@ body.heading-i.layout-a .article .chapter-one h2 {
   padding-inline: 16px;
 }
 body.heading-i.layout-a .article .chapter h2::before {
-  left: 52%;
+  left: min(378px, calc(50vw - 146px));
   right: auto;
   width: 140px;
   opacity: .12;
+}
+
+@media (max-width: 900px) {
+  body.heading-i.layout-a .article .chapter h2::before {
+    left: calc(50vw - 134px);
+  }
 }
 
 @media (max-width: 620px) {
   body.heading-i.layout-a .article .chapter h2 { width: min(100%, 320px); }
   body.heading-i.layout-a .article .chapter-one h2 { padding-inline: 10px; }
   body.heading-i.layout-a .article .chapter h2::before {
-    left: 52%;
+    left: calc(50vw - 83px);
     right: auto;
-    width: 98px;
+    width: 94px;
     opacity: .12;
   }
 }
