@@ -248,12 +248,14 @@ body.guide-three.heading-i.layout-a .article .guide-questions__number {
   display: block;
   margin-bottom: 7px;
   color: #d6be9b;
-  font: 400 12px/1.3 Georgia, serif;
+  font: 400 12px/1.3 "Times New Roman", Times, serif;
   font-variant-numeric: lining-nums tabular-nums;
   letter-spacing: .12em;
 }
 .guide-questions__steps strong {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 58px;
   color: #f3eee5;
   font-size: 20px;
@@ -377,6 +379,7 @@ body.guide-three.heading-i.layout-a .article .guide-questions__number {
     font-size: 11px;
   }
   .guide-questions__steps strong {
+    display: block;
     min-height: 0;
     font-size: 18px;
     line-height: 1.4;
