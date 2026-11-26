@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Guide 2 keeps the Guide 1 editorial grid; only the cover image and its title adapt. */
+body.guide-two::before {
+  background-image: linear-gradient(180deg, rgba(13, 8, 5, .27), rgba(13, 8, 5, .40)), url("assets/guide02-hero.jpg");
+  background-position: center center;
+}
+
+body.guide-two .hero h1 {
+  max-width: 950px;
+  margin-inline: auto;
+  font-size: clamp(28px, 3.25vw, 46px);
+  line-height: 1.5;
+  white-space: normal;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+
+/* The three themes use the same alternating photograph plan as Guide 1's CASE sequence. */
+body.guide-two .article .chapter-three .case { margin-top: 36px; }
+body.guide-two .article .chapter-three .case-heading h3 { margin-bottom: 17px; }
+
+@media (max-width: 620px) {
+  body.guide-two::before { background-position: 77% center; }
+  body.guide-two .hero h1 {
+    max-width: 340px;
+    font-size: clamp(23px, 6vw, 29px);
+    line-height: 1.52;
+    letter-spacing: .01em;
+  }
+  body.guide-two .article .chapter-three .case { margin-top: 30px; }
+}

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/* Guide 1: photographic feature spreads inside the approved article frame. */
+
+.heading-i .article .opening-grid { display: block; }
+.heading-i .article .opening-copy { max-width: 670px; padding-top: 0; }
+.heading-i .article .opening-photo img {
+  width: 100%;
+  aspect-ratio: 2.18;
+  object-position: center 73%;
+}
+.heading-i .article .chapter-three .case { border-top: 0; }
+.heading-i .article .case-index {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #806037;
+  letter-spacing: .22em;
+}
+.heading-i .article .case-index::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, #8a6637, #d9c59e);
+}
+.heading-i .article .case-heading h3,
+.heading-i .article .case-two-head h3 { margin-bottom: 25px; }
+.heading-i .article .case-photo img,
+.heading-i .article .case-two-photo img { display: block; }
+
+@media (min-width: 901px) {
+  /* A landscape plate follows the opening sentence without breaking its order. */
+  .heading-i .article .opening-photo {
+    width: calc(100% + 104px);
+    margin: 42px -52px 0;
+  }
+  .heading-i .article .chapter-one > .reading-column {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 47px;
+  }
+  .heading-i .article .chapter-one > .statement-light {
+    width: min(720px, 100%);
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* A text-led spread separates the introduction from the photographic cases. */
+  .heading-i .article .chapter-two-lead {
+    max-width: 660px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .heading-i .article .chapter-two > .reading-column {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .heading-i .article .chapter-two > .statement-rule {
+    max-width: 690px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* Three feature layouts share a case label but give each story its own rhythm. */
+  .heading-i .article .chapter-three .case { padding-top: 94px; padding-bottom: 98px; }
+  .heading-i .article .chapter-three .case:last-child { padding-bottom: 0; }
+
+  /* Case one: a right-hand landscape plate leads into a narrow text column. */
+  .heading-i .article .case-one .case-grid {
+    grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+    gap: clamp(28px, 3.5vw, 52px);
+    align-items: start;
+  }
+  .heading-i .article .case-one .case-heading { padding-top: 48px; }
+  .heading-i .article .case-one .case-photo {
+    margin-right: -52px;
+  }
+  .heading-i .article .case-one .case-photo img {
+    aspect-ratio: 1.42;
+    object-position: 50% 49%;
+  }
+  .heading-i .article .case-one > .reading-column {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* Case two: a portrait photograph and short prose share a feature spread. */
+  .heading-i .article .case-two {
+    display: grid;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+    column-gap: clamp(32px, 3.5vw, 54px);
+    align-items: start;
+  }
+  .heading-i .article .case-two-head {
+    grid-column: 2;
+    grid-row: 1;
+    max-width: none;
+    margin: 20px 0 0;
+  }
+  .heading-i .article .case-two-photo {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    float: none;
+    width: calc(100% + 52px);
+    margin: 0 0 0 -52px;
+  }
+  .heading-i .article .case-two-photo img {
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-position: center 75%;
+  }
+  .heading-i .article .case-two > .case-two-intro {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  .heading-i .article .case-two > .case-two-rest {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: min(670px, 100%);
+    margin: 46px 0 0 auto;
+  }
+
+  /* Case three: the photograph crosses the whole paper after the introduction. */
+  .heading-i .article .case-three .case-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 34px;
+  }
+  .heading-i .article .case-three .case-heading {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .heading-i .article .case-three .case-photo {
+    width: calc(100% + 104px);
+    margin: 0 -52px;
+  }
+  .heading-i .article .case-three .case-photo img {
+    aspect-ratio: 2.18;
+    object-position: 50% 48%;
+  }
+  .heading-i .article .case-three > .reading-column {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  /* The final text spread closes the visual rhythm before the existing NEXT. */
+  .heading-i .article .chapter-four-lead {
+    max-width: 670px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .heading-i .article .chapter-four > .reading-column {
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .heading-i .article .opening-photo {
+    width: calc(100% + 80px);
+    max-width: none;
+    margin: 36px -40px 0;
+  }
+  .heading-i .article .opening-photo img { aspect-ratio: 1.7; }
+  .heading-i .article .chapter-one > .reading-column { margin-top: 40px; }
+  .heading-i .article .case-one .case-grid,
+  .heading-i .article .case-three .case-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .heading-i .article .case-one .case-photo,
+  .heading-i .article .case-three .case-photo { order: initial; }
+  .heading-i .article .case-three .case-grid {
+    gap: 28px;
+  }
+  .heading-i .article .case-three .case-photo img {
+    aspect-ratio: 1.65;
+    object-position: 50% 48%;
+  }
+  .heading-i .article .case-two > .case-two-intro {
+    margin-top: 0;
+  }
+  .heading-i .article .case-two > .case-two-rest {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  .heading-i .article .opening-photo {
+    width: calc(100% + 44px);
+    margin: 26px -22px 0;
+  }
+  .heading-i .article .opening-photo img {
+    aspect-ratio: 1.38;
+    object-position: center 74%;
+  }
+  .heading-i .article .chapter-one > .reading-column { margin-top: 33px; }
+  .heading-i .article .case-index { gap: 11px; }
+  .heading-i .article .case-index::after { width: 33px; }
+  .heading-i .article .case-heading h3,
+  .heading-i .article .case-two-head h3 { margin-bottom: 20px; }
+  .heading-i .article .case-one .case-photo img { aspect-ratio: 1.18; }
+  .heading-i .article .case-two-photo {
+    float: none;
+    width: 100%;
+    margin: 0 0 32px;
+  }
+  .heading-i .article .case-two-photo img {
+    aspect-ratio: 1.08;
+    object-position: center 68%;
+  }
+  .heading-i .article .case-three .case-photo img { aspect-ratio: 1.32; }
+}

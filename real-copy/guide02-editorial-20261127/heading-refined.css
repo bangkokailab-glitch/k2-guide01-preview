@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* Guide 1 heading studies. The approved cover, photographs and copy come from style.css. */
+:root {
+  --metal-gold: linear-gradient(90deg, #755332 0%, #b5965d 28%, #f3e3b3 48%, #a58047 68%, #6d4b2b 100%);
+  --metal-gold-vertical: linear-gradient(180deg, #6e4a2a 0%, #e9d59c 35%, #aa8246 65%, #684522 100%);
+}
+
+/* Restore the approved long-form reading scale used by the earlier Guide. */
+body { font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
+.prose,
+.opening-lead,
+.chapter-two-lead,
+.chapter-four-lead,
+.case-heading p {
+  font-size: 17px;
+  line-height: 2.05;
+  letter-spacing: .015em;
+}
+.statement-light p,
+.statement-rule p { font-size: 19px; line-height: 1.9; letter-spacing: .015em; }
+.closing-line p { font-size: 22px; line-height: 1.85; letter-spacing: .025em; }
+
+/* The cover title must remain visibly dominant over article headings. */
+.chapter h2 { font-size: clamp(30px, 2.25vw, 33px); line-height: 1.48; letter-spacing: .025em; }
+.chapter h3 { font-size: clamp(21px, 1.65vw, 24px); line-height: 1.6; letter-spacing: .025em; }
+.chapter:not(.chapter-one) > .chapter-heading { border-top: 0; padding-top: 0; }
+.chapter-heading h2::after { content: none; }
+.chapter-kicker { color: #86663c; }
+.chapter-kicker span:first-child { color: #8d6638; }
+.case-index { color: #8d6638; }
+
+/* A — editorial: a precise short bar of polished gold, with a quiet case marker. */
+.heading-a .chapter h2::before {
+  content: "";
+  display: block;
+  width: 88px;
+  height: 3px;
+  margin-bottom: 25px;
+  background: var(--metal-gold);
+  box-shadow: 0 1px 0 #fff7e5, 0 3px 10px #8e6c3f33;
+}
+.heading-a .chapter h3 { display: flex; align-items: baseline; gap: 15px; }
+.heading-a .chapter h3::before {
+  content: "";
+  display: block;
+  flex: 0 0 24px;
+  height: 2px;
+  transform: translateY(-.22em);
+  background: var(--metal-gold);
+  box-shadow: 0 1px 0 #fff8e7;
+}
+
+/* B — architectural: one strong, brushed-gold vertical axis. */
+.heading-b .chapter h2 {
+  padding-left: 12px;
+  border-left: 3px solid #ad8851;
+  border-image: var(--metal-gold-vertical) 1;
+}
+.heading-b .chapter h3 { display: flex; align-items: baseline; gap: 15px; }
+.heading-b .chapter h3::before {
+  content: "";
+  display: block;
+  flex: 0 0 8px;
+  height: 8px;
+  transform: translateY(-.13em);
+  background: #b7975f;
+  box-shadow: inset 1px 1px 0 #f0dfb2, 1px 1px 0 #76512b;
+}
+
+/* C — magazine: restrained foil lettering and a full-width horizontal rule. */
+.heading-c .chapter h2 {
+  position: relative;
+  padding-bottom: 23px;
+  color: #755734;
+  background: linear-gradient(105deg, #49311f 0%, #765126 16%, #bf944f 22%, #f1d89a 24%, #765126 27%, #4a3525 60%, #735127 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading-c .chapter h2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  background: var(--metal-gold);
+  box-shadow: 0 1px 0 #fff9ea;
+}
+.heading-c .chapter h3 { padding: 0 0 15px; border-bottom: 1px solid #c5ab7e; }
+.heading-c .chapter h3::after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 3px;
+  margin-top: 17px;
+  background: var(--metal-gold);
+}
+.heading-c .case-index { letter-spacing: .27em; }
+
+@media (max-width: 620px) {
+  .prose,
+  .opening-lead,
+  .chapter-two-lead,
+  .chapter-four-lead,
+  .case-heading p { font-size: 16px; line-height: 2; letter-spacing: .005em; }
+  .statement-light p,
+  .statement-rule p { font-size: 18px; line-height: 1.85; }
+  .closing-line p { font-size: 20px; line-height: 1.8; }
+  .chapter h2 { font-size: 23px; line-height: 1.52; letter-spacing: .015em; }
+  .chapter h3 { font-size: 19px; line-height: 1.55; letter-spacing: .015em; }
+  .chapter-heading { margin-bottom: 31px; }
+  .opening-copy h2 { margin-bottom: 21px; }
+  .heading-a .chapter h2::before { width: 64px; height: 2px; margin-bottom: 18px; }
+  .heading-a .chapter h3::before { flex-basis: 19px; }
+  .heading-b .chapter h2 { padding-left: 18px; border-left-width: 3px; }
+  .heading-c .chapter h2 { padding-bottom: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heading-a *, .heading-b *, .heading-c * { animation: none !important; }
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* Guide 3 keeps Guide 1's page system while giving the cover its own subject. */
+body.guide-three::before {
+  background-image: linear-gradient(180deg, rgba(12, 7, 4, .34), rgba(12, 7, 4, .43)), url("assets/guide03-hero.jpg");
+  background-position: center center;
+}
+
+body.guide-three .hero h1 {
+  max-width: 940px;
+  margin-inline: auto;
+  font-size: clamp(30px, 3.65vw, 48px);
+  line-height: 1.55;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+body.guide-three .chapter-one .opening-copy {
+  max-width: none;
+}
+
+body.guide-three .chapter-three .visual-plan,
+body.guide-three .chapter-four .visual-plan {
+  width: 100%;
+}
+
+body.guide-three .next-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+body.guide-three .next-actions .next-button {
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  body.guide-three .hero h1 {
+    font-size: clamp(21px, 5.8vw, 28px);
+    line-height: 1.55;
+  }
+
+  body.guide-three .next-actions {
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 32px;
+  }
+
+  body.guide-three .next-actions .next-button {
+    width: min(100%, 320px);
+  }
+}
