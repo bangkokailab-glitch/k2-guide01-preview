@@ -64,29 +64,6 @@ body.guide-three .next-actions .next-button {
   }
 }
 
-/* A small factual marker on the two-photo placeholder; the photo ratio is unchanged. */
-body.guide-three.heading-i.layout-study.layout-a .article .chapter-two .photo-board--duo {
-  position: relative;
-}
-body.guide-three.heading-i.layout-study.layout-a .article .photo-fact-tag {
-  position: absolute;
-  z-index: 2;
-  top: 14px;
-  left: 14px;
-  display: flex;
-  align-items: center;
-  min-height: 38px;
-  padding: 7px 14px;
-  border: 1px solid #c19a5c;
-  border-left: 3px solid #d2aa64;
-  background: linear-gradient(105deg, #17120e, #32251a 68%, #5d4023);
-  box-shadow: 0 6px 16px rgba(29, 19, 9, .22), inset 0 1px 0 rgba(244, 213, 156, .45);
-  color: #fff9ed;
-  font: 600 13px/1.3 "Yu Mincho", "Hiragino Mincho ProN", serif;
-  letter-spacing: .06em;
-  pointer-events: none;
-}
-
 /* The existing idea-diagram slot becomes a three-card sequence with the CASE/OPTION plaque language. */
 body.guide-three.heading-i.layout-a .article .visual-plan--steps {
   display: grid;
@@ -161,13 +138,6 @@ body.guide-three.heading-i.layout-a .article .visual-plan--steps figcaption {
 }
 
 @media (max-width: 620px) {
-  body.guide-three.heading-i.layout-study.layout-a .article .photo-fact-tag {
-    top: 9px;
-    left: 9px;
-    min-height: 31px;
-    padding: 5px 9px;
-    font-size: 12px;
-  }
   body.guide-three.heading-i.layout-a .article .visual-plan--steps {
     gap: 18px;
     padding: 22px 14px 16px;
