@@ -62,7 +62,7 @@ button { font: inherit; }
 .footer-top nav { display: flex; gap: clamp(38px, 5vw, 90px); }
 .footer-top nav span { font-size: 18px; line-height: 1.5; white-space: nowrap; }
 .footer-top small { display: block; color: #aaa097; font-size: 12px; margin-top: 8px; }
-.footer-bottom { padding: 36px 0 42px; border-top: 1px solid rgba(216, 198, 163, .24); align-items: center; color: #b8aa99; font-size: 12px; }
+.footer-bottom { flex-direction: row-reverse; padding: 36px 0 42px; border-top: 1px solid rgba(216, 198, 163, .24); align-items: center; color: #b8aa99; font-size: 12px; }
 .footer-bottom p { margin: 0; white-space: nowrap; }
 .footer-bottom nav { display: flex; flex-wrap: wrap; justify-content: end; gap: 14px 24px; }
 #guide-nav a:focus-visible, .brand-link:focus-visible, .menu-toggle:focus-visible, .next-button:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 4px; }
@@ -107,7 +107,7 @@ button { font: inherit; }
   .footer-top nav { width: 100%; display: grid; grid-template-columns: 1fr; gap: 29px; text-align: center; }
   .footer-top nav span { font-size: 19px; }
   .footer-bottom { display: block; padding: 36px 0 48px; text-align: center; }
-  .footer-bottom p { margin-bottom: 31px; }
+  .footer-bottom p { margin-top: 31px; }
   .footer-bottom nav { display: grid; gap: 22px; justify-content: center; }
 }
 

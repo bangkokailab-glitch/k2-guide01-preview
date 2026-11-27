@@ -342,7 +342,7 @@ body.heading-i.layout-c .article .case-three .case-photo::before { aspect-ratio:
 }
 
 @media (max-width: 620px) {
-  body.heading-i.layout-a .article { padding-inline: 36px; }
+  body.heading-i.layout-a .article { padding-inline: 20px; }
   body.heading-i.layout-study.layout-a .article p { font-size: 16px; }
   body.heading-i.layout-a .article .visual-plan {
     min-height: 182px;
