@@ -1,13 +1,30 @@
 @charset "UTF-8";
 
-/* Cover photograph exchanged with Guide 2 for the client review. */
+/* Guide 1 cover options. C is the selected default. */
 body.heading-i.layout-study.layout-a .hero {
-  background: linear-gradient(rgba(25, 18, 12, .55), rgba(25, 18, 12, .58)),
-    url("assets/g1-hero-from-guide02.jpg") center 50% / cover no-repeat;
+  --guide1-cover: url("assets/g1-hero-option-c-family-study-20261127.jpg");
+  background: linear-gradient(rgba(25, 18, 12, .28), rgba(25, 18, 12, .38)),
+    var(--guide1-cover) center 50% / cover no-repeat;
+}
+
+html[data-hero-option="a"] body.heading-i.layout-study.layout-a .hero {
+  --guide1-cover: url("assets/g1-hero-option-a-private-dialogue-20261127.jpg");
+}
+
+html[data-hero-option="b"] body.heading-i.layout-study.layout-a .hero {
+  --guide1-cover: url("assets/g1-hero-option-b-private-office-20261127.jpg");
 }
 
 @media (max-width: 620px) {
   body.heading-i.layout-study.layout-a .hero {
-    background-position: center, 18% center;
+    background-position: center, 68% center;
+  }
+
+  html[data-hero-option="a"] body.heading-i.layout-study.layout-a .hero {
+    background-position: center, 25% center;
+  }
+
+  html[data-hero-option="b"] body.heading-i.layout-study.layout-a .hero {
+    background-position: center, 67% center;
   }
 }
