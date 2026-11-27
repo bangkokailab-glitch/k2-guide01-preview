@@ -24,21 +24,13 @@
   <link rel="stylesheet" href="guide01-visuals-lp.css?v=20261127-4">
   <link rel="stylesheet" href="case-photos.css?v=20261127-2">
   <link rel="stylesheet" href="guide01-photos-final.css?v=20261127-1">
-  <link rel="stylesheet" href="guide01-hero-v2.css?v=20261127-1">
+  <link rel="stylesheet" href="guide01-hero-v2.css?v=20261127-2">
 </head>
 <body class="heading-i layout-study layout-a brand-study brand-study--a brand-heading brand-heading--b">
 <div class="site" id="top">
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand-link" href="#top" aria-label="K2 Family Office Guide 1の先頭へ"><img class="brand" src="assets/header-logo.svg" alt="K2 Family Office"></a>
-      <button class="menu-toggle" type="button" aria-label="ガイドメニューを開く" aria-controls="guide-nav" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav id="guide-nav" aria-label="ガイドを読む順番">
-        <a href="#top" aria-current="page">ファミリーオフィスとは</a>
-        <a href="https://bangkokailab-glitch.github.io/k2-guide01-preview/real-copy/guide02-editorial-20261127/">日本という前提</a>
-        <a href="https://bangkokailab-glitch.github.io/k2-guide01-preview/real-copy/guide03-editorial-20261127/">人生を一つの設計に</a>
-        <a href="https://bangkokailab-glitch.github.io/k2-guide01-preview/real-copy/guide-faq-20261127/">よくある質問</a>
-        <a href="https://makiringgg.github.io/k2-family-office-preview/?v=11&amp;updated=20261115-7fd0b696">ファミリーオフィスを作る</a>
-      </nav>
+      <div class="brand-link"><img class="brand" src="assets/header-logo.svg" alt="K2 Family Office"></div>
     </div>
   </header>
 
@@ -178,14 +170,6 @@
       </section>
     </article>
 
-    <section class="next-section" aria-labelledby="next-title">
-      <div class="next-inner">
-        <p class="next-kicker">NEXT / FAMILY OFFICE GUIDE <span class="label-number">02</span></p>
-        <h2 id="next-title">日本という前提だけで、<br>人生を設計していないか</h2>
-        <p class="next-description">事業、資産、家族の将来を考えるとき、私たちは無意識のうちに、日本の制度や常識を前提にしていることがあります。しかし、収入を得る市場、資産を保有する国、家族が暮らす場所、子どもが教育を受ける環境は、日本だけに限られません。次のガイドでは、世界に目を向けることで広がる人生の選択肢について考えます。</p>
-        <a class="next-button" href="https://bangkokailab-glitch.github.io/k2-guide01-preview/real-copy/guide02-editorial-20261127/">ガイド2を読む</a>
-      </div>
-    </section>
   </main>
 
   <footer class="guide-footer">
@@ -196,22 +180,5 @@
     <div class="footer-bottom"><p>© 2026 K2 Family Office</p><nav aria-label="運営情報"><span>会社概要・運営者情報</span><span>プライバシーポリシー</span><span>利用規約</span><span>一般お問い合わせ</span></nav></div>
   </footer>
 </div>
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('#guide-nav');
-  toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') !== 'true';
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'ガイドメニューを閉じる' : 'ガイドメニューを開く');
-    nav.classList.toggle('is-open', open);
-  });
-  nav.addEventListener('click', (event) => {
-    if (event.target.closest('a')) {
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.setAttribute('aria-label', 'ガイドメニューを開く');
-      nav.classList.remove('is-open');
-    }
-  });
-</script>
 </body>
 </html>

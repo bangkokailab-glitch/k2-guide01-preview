@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-/* The opening photo carries the guide's business-to-family story. */
+/* Cover photograph exchanged with Guide 2 for the client review. */
 body.heading-i.layout-study.layout-a .hero {
   background: linear-gradient(rgba(25, 18, 12, .55), rgba(25, 18, 12, .58)),
-    url("assets/g1-hero-v2.jpg") center 50% / cover no-repeat;
+    url("assets/g1-hero-from-guide02.jpg") center 50% / cover no-repeat;
 }
 
 @media (max-width: 620px) {
   body.heading-i.layout-study.layout-a .hero {
-    background-position: center, 25% center;
+    background-position: center, 18% center;
   }
 }

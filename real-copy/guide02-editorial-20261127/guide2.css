@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/* Guide 2 keeps the Guide 1 editorial grid; only the cover image and its title adapt. */
+/* Guide 2 keeps the Guide 1 editorial grid; cover photograph exchanged with Guide 1. */
 body.guide-two::before {
-  background-image: linear-gradient(180deg, rgba(13, 8, 5, .36), rgba(13, 8, 5, .46)), url("assets/guide02-hero-v2.jpg");
+  background-image: linear-gradient(180deg, rgba(13, 8, 5, .36), rgba(13, 8, 5, .46)), url("assets/g2-hero-from-guide01.jpg");
   background-position: center center;
 }
 
@@ -27,7 +27,7 @@ body.guide-two .article .chapter-three .case-heading h3 { margin-bottom: 17px; }
 @media (max-width: 620px) {
   body.guide-two::before { background-position: 77% center; }
   body.guide-two .hero {
-    background: linear-gradient(180deg, rgba(13, 8, 5, .40), rgba(13, 8, 5, .50)), url("assets/guide02-hero-v2.jpg") 18% center / cover no-repeat;
+    background: linear-gradient(180deg, rgba(13, 8, 5, .40), rgba(13, 8, 5, .50)), url("assets/g2-hero-from-guide01.jpg") 82% center / cover no-repeat;
   }
   body.guide-two .hero h1 {
     max-width: 340px;
